@@ -37,7 +37,7 @@ export default function Home() {
                 src="/images/bagsummarymockup.png"
                 width={540}
                 height={864}
-                alt='Mockup of a hand scanner displaying a load success screen'
+                alt='Mockup of a phone showing a baggage tracking screen'
               />
             </div>          
           </div>
@@ -52,7 +52,7 @@ export default function Home() {
                 src="/images/bidsmockup.png"
                 width={728}
                 height={512}
-                alt='Mockup of a hand scanner displaying a load success screen'
+                alt='Mockup of a tv information display'
               />
             </div>          
           </div>
@@ -63,7 +63,7 @@ export default function Home() {
               I am a UX designer and researcher specializing in complex systems.
             </div>
             <div className={styles.aboutmetext}>
-              Unlike other designers, my background isn't graphic design, branding, or animation. Instead, I come from the world of quantitative and qualitative research. This allows me to build streamlined interfaces that empower users to interact with complex systems in a way that makes sense to them.
+              Unlike other designers, my background is not graphic design, branding, or animation. Instead, I come from the world of quantitative and qualitative research. This allows me to build streamlined interfaces that empower users to interact with complex systems in a way that makes sense to them.
             </div>
             <div className={styles.aboutmetext}>
             I am currently working at Brock Solutions, reshaping how airlines keep track of their bags. Normally, I call Canada home but I am currently exploring the incredible beauty of the Scottish lowlands.
@@ -86,7 +86,7 @@ export default function Home() {
                 Domain Knowledge
               </div>
               <div className={styles.skillssectiontext}>
-                I don't like to create a general mockup and let the devs figure out the details. Instead I dive into the domain, and work with the team to figure out the details that make the difference.
+                I do not like to create a general mockup and let the devs figure out the details. Instead I dive into the domain, and work with the team to figure out the details that make the difference.
               </div>
             </div>
             <div className={styles.skillssection}>
