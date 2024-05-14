@@ -44,7 +44,7 @@ export default function Home() {
           <div className={styles.casestudy3}>
             <div className={styles.casestudystub}>
               <div className={styles.casestudystubtext}>
-                TV displays to modernize the bag room  📺
+                TV displays to modernize the bag room 📺
               </div>
             </div>
             <div className={styles.casestudycontent3}>
