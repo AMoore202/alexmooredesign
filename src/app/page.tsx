@@ -1,4 +1,4 @@
-import styles from "./page.module.css";
+import styles from "./home.module.css";
 import Image from 'next/image';
 
 export default function Home() {
@@ -12,48 +12,57 @@ export default function Home() {
       <div className={styles.content}>
         <div className={styles.casestudies}>
           <div className={styles.casestudy1}>
-            <div className={styles.casestudystub}>
+            <div className={styles.casestudystub1}>
               <div className={styles.casestudystubtext}>
                 Refreshed UI for loading luggage  on a flight ✈️
               </div>
             </div>
             <div className={styles.casestudycontent1}>
-              <Image 
-                src="/images/loadsuccessmockup.png"
-                width={570}
-                height={840}
-                alt='Mockup of a hand scanner displaying a load success screen'
-              />
+              <div className={styles.casestudyimage1}>
+                <Image 
+                  src="/images/loadsuccessmockup.png"
+                  layout="responsive"
+                  width={570}
+                  height={840}
+                  alt='Mockup of a hand scanner displaying a load success screen'
+                />
+              </div>
             </div>          
           </div>
           <div className={styles.casestudy2}>
-            <div className={styles.casestudystub}>
+            <div className={styles.casestudystub2}>
               <div className={styles.casestudystubtext}>
                 Telling the story of a lost bag 💼
               </div>
             </div>
             <div className={styles.casestudycontent2}>
-              <Image 
-                src="/images/bagsummarymockup.png"
-                width={540}
-                height={864}
-                alt='Mockup of a phone showing a baggage tracking screen'
-              />
+              <div className={styles.casestudyimage2}>
+                <Image 
+                  src="/images/bagsummarymockup.png"
+                  layout="responsive"
+                  width={540}
+                  height={864}
+                  alt='Mockup of a phone showing a baggage tracking screen'
+                />
+              </div>
             </div>          
           </div>
           <div className={styles.casestudy3}>
-            <div className={styles.casestudystub}>
+            <div className={styles.casestudystub3}>
               <div className={styles.casestudystubtext}>
                 TV displays to modernize the bag room 📺
               </div>
             </div>
             <div className={styles.casestudycontent3}>
-              <Image 
-                src="/images/bidsmockup.png"
-                width={728}
-                height={512}
-                alt='Mockup of a tv information display'
-              />
+              <div className={styles.casestudyimage3}>
+                <Image 
+                  src="/images/bidsmockup.png"
+                  layout="responsive"
+                  width={728}
+                  height={512}
+                  alt='Mockup of a tv information display'
+                />
+              </div>
             </div>          
           </div>
         </div>
@@ -69,12 +78,16 @@ export default function Home() {
             I am currently working at Brock Solutions, reshaping how airlines keep track of their bags. Normally, I call Canada home but I am currently exploring the incredible beauty of the Scottish lowlands.
             </div>
           </div>
-          <Image
-            src="/images/headshot.jpg"
-            width={456}
-            height={342}
-            alt="Headshot"
-          />
+          <div className={styles.aboutmeimage}>
+            <Image
+              src="/images/headshot.jpg"
+              // className={styles.aboutmeimage}
+              layout="responsive"
+              width={456}
+              height={342}
+              alt="Headshot"
+            />
+          </div>
         </div>
         <div className={styles.skills}>
           <div className={styles.skillstitle}>
