@@ -1,16 +1,35 @@
+"use client";
+
 import styles from "./home.module.css";
 import Image from 'next/image';
+import Navbar from "./ui/Navbar";
 
 export default function Home() {
   return (
     <main className={styles.main}>
+      <Navbar />
+      {/* <div className={styles.nav}>
+        <div className={styles.navitems}>
+          <a href="#casestudies">My Work</a>
+          <a href="#aboutme">About Me</a>
+          <a href="#footer">Contact</a>
+        </div>
+        <div className={styles.hamburgericon}>
+          <Image 
+            src="/icons/hamburger.svg" 
+            alt="Menu" 
+            width={22}
+            height={16}
+          />
+        </div>
+      </div> */}
       <div className={styles.titlebar}>
         <div className={styles.title}>
           Alex Moore
         </div>
       </div>
       <div className={styles.content}>
-        <div className={styles.casestudies}>
+        <div id="casestudies" className={styles.casestudies}>
           <div className={styles.casestudy1}>
             <div className={styles.casestudystub1}>
               <div className={styles.casestudystubtext}>
@@ -66,7 +85,7 @@ export default function Home() {
             </div>          
           </div>
         </div>
-        <div className={styles.aboutme}>
+        <div id="aboutme" className={styles.aboutme}>
           <div className={styles.aboutmecontent}>
             <div className={styles.aboutmetitle}>
               I am a UX designer and researcher specializing in complex systems.
@@ -139,7 +158,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={styles.footer}>
+      <div id="footer" className={styles.footer}>
         <div className={styles.footercontent}>
           <div className={styles.footertitle}>
             Alex Moore
