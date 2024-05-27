@@ -2,27 +2,12 @@
 
 import styles from "./home.module.css";
 import Image from 'next/image';
-import Navbar from "./ui/Navbar";
+import DesktopNavbar from "./ui/DesktopNavbar";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Navbar />
-      {/* <div className={styles.nav}>
-        <div className={styles.navitems}>
-          <a href="#casestudies">My Work</a>
-          <a href="#aboutme">About Me</a>
-          <a href="#footer">Contact</a>
-        </div>
-        <div className={styles.hamburgericon}>
-          <Image 
-            src="/icons/hamburger.svg" 
-            alt="Menu" 
-            width={22}
-            height={16}
-          />
-        </div>
-      </div> */}
+      <DesktopNavbar />
       <div className={styles.titlebar}>
         <div className={styles.title}>
           Alex Moore

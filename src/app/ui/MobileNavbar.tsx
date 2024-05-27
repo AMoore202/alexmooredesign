@@ -3,9 +3,9 @@
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "./Navbar.module.css";
+import styles from "./MobileNavbar.module.css";
 
-export default function Navbar() {
+export default function MobileNavbar() {
     const [menuOpen, setMenuOpen] = useState(false);
     const navRef = useRef<HTMLDivElement>(null);
 
