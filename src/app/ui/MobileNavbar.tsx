@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./MobileNavbar.module.css";
+import { motion } from "framer-motion";
 
 export default function MobileNavbar() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -17,49 +18,38 @@ export default function MobileNavbar() {
         setMenuOpen(false);
     }
 
-    useEffect(() => {
-        const mobileNavItems = navRef.current;
-        if (mobileNavItems) {
-            if (menuOpen) {
-                mobileNavItems.style.maxHeight = "140px";
-                mobileNavItems.style.width = "132px";
-                mobileNavItems.style.visibility = "visible";
-                mobileNavItems.style.display = "flex";
-                mobileNavItems.style.opacity = "1";
-            } else {
-                mobileNavItems.style.maxHeight = '0';
-                mobileNavItems.style.opacity = '0';
-                setTimeout(() => {
-                    if (!menuOpen) {
-                        mobileNavItems.style.width = '0';
-                        mobileNavItems.style.visibility = 'hidden';
-                        mobileNavItems.style.display = 'none';
-                    }       
-                }, 300); 
-            }
-        }
-    }, [menuOpen]);
+    const menuicon = <Image 
+            src="/icons/hamburger.svg" 
+            alt="Menu" 
+            width={22}
+            height={16}
+        />
+
+    const closeicon = <Image 
+            src="/icons/close.svg" 
+            alt="Close" 
+            width={22}
+            height={16}
+        />
+
+    const navlinks = <motion.div 
+        className={styles.navitems} 
+        initial={{ opacity: 0 }} 
+        animate={{ opacity: 100 }}
+    >
+        <Link className={styles.navitem} href="#casestudies" onClick={closeMenu}>My Work</Link>
+        <Link className={styles.navitem} href="#aboutme" onClick={closeMenu}>About Me</Link>
+        <Link className={styles.navitem} href="#footer" onClick={closeMenu}>Contact</Link>
+    </motion.div>
 
     return (
-        <nav className={styles.nav}>
-            <div className={styles.hamburgericon} onClick={toggleMenu}>
-                <Image 
-                    src="/icons/hamburger.svg" 
-                    alt="Menu" 
-                    width={22}
-                    height={16}
-                />
-            </div>
-            <div ref={navRef} className={`${styles.mobilenavitems} ${menuOpen ? styles.show : ''}`}>
-                <Link href="#casestudies" onClick={closeMenu}>My Work</Link>
-                <Link href="#aboutme" onClick={closeMenu}>About Me</Link>
-                <Link href="#footer" onClick={closeMenu}>Contact</Link>
-            </div>
-            <div className={styles.desktopnavitems}>
-                <Link href="#casestudies">My Work</Link>
-                <Link href="#aboutme">About Me</Link>
-                <Link href="#footer">Contact</Link>
-            </div>
-        </nav>
+        <>
+            <nav className={styles.navbar}>
+                <div className={styles.hamburgericon} onClick={toggleMenu}>
+                    { menuOpen ? closeicon : menuicon }
+                </div>
+            </nav>
+            { menuOpen && navlinks }
+        </>
     );
 }

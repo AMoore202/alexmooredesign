@@ -3,11 +3,13 @@
 import styles from "./home.module.css";
 import Image from 'next/image';
 import DesktopNavbar from "./ui/DesktopNavbar";
+import MobileNavbar from "./ui/MobileNavbar";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <DesktopNavbar />
+      <MobileNavbar />
       <div className={styles.titlebar}>
         <div className={styles.title}>
           Alex Moore
