@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./MobileNavbar.module.css";
@@ -8,7 +8,6 @@ import { motion } from "framer-motion";
 
 export default function MobileNavbar() {
     const [menuOpen, setMenuOpen] = useState(false);
-    const navRef = useRef<HTMLDivElement>(null);
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
