@@ -1,14 +1,14 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import styles from "./MobileNavbar.module.css";
 import { motion } from "framer-motion";
+import CloseIcon from "@/app/ui/icons/CloseIcon";
+import HamburgerIcon from "@/app/ui/icons/HamburgerIcon";
 
 export default function MobileNavbar() {
     const [menuOpen, setMenuOpen] = useState(false);
-    const navRef = useRef<HTMLDivElement>(null);
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
@@ -17,20 +17,6 @@ export default function MobileNavbar() {
     const closeMenu = () => {
         setMenuOpen(false);
     }
-
-    const menuicon = <Image 
-            src="/icons/hamburger.svg" 
-            alt="Menu" 
-            width={22}
-            height={16}
-        />
-
-    const closeicon = <Image 
-            src="/icons/close.svg" 
-            alt="Close" 
-            width={22}
-            height={16}
-        />
 
     const navlinks = <motion.div 
         className={styles.navitems} 
@@ -45,11 +31,17 @@ export default function MobileNavbar() {
     return (
         <>
             <nav className={styles.navbar}>
-                <div className={styles.hamburgericon} onClick={toggleMenu}>
-                    { menuOpen ? closeicon : menuicon }
+                <div className={styles.navbarcontent} onClick={toggleMenu}>
+                    { 
+                        menuOpen 
+                        ? 
+                        <CloseIcon className={styles.closeicon} />
+                        : 
+                        <HamburgerIcon className={styles.hamburgericon} /> 
+                    }   
                 </div>
             </nav>
             { menuOpen && navlinks }
-        </>
+        </> 
     );
 }
