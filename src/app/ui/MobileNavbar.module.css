@@ -31,14 +31,28 @@
   letter-spacing: -0.03rem;
 }
 
+.navbarcontent {
+  display: flex;
+  width: 1.5rem;
+  height: 1.125rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .hamburgericon {
-  width: 1.375rem;
-  height: 1rem;
+  width: 1.5rem;
+  height: 1.125rem;
   stroke-width: 2px;
   stroke: var(--Black-900, #3D3D3D);
   cursor: pointer;
-  align-items: center;
-  justify-content: center;
+}
+
+.closeicon {
+  width: 1.5rem;
+  height: 1.125rem;
+  stroke: var(--Black-900, #3D3D3D);
+  stroke-width: 0.4px;
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
