@@ -1,3 +1,11 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    gap: 6rem;
+  }
+  
 .mockup {
     display: flex;
     width: 100%;
@@ -7,3 +15,238 @@
     background: var(--Accent-Thistle, #DFC7E0);
     box-shadow: 0px 4px 16px 0px rgba(150, 99, 150, 0.16), 0px 0px 8px 0px rgba(150, 99, 150, 0.15);
 }
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5rem;
+    max-width: 74rem;
+}
+
+.overview {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.overviewtitle {
+    align-self: stretch;
+    color: var(--Neutral-700, #4F4F4F);
+    font-size: 4rem;
+    font-weight: 200;
+    line-height: 140%;
+}
+
+.overviewcontent {
+    display: flex;
+    align-items: flex-start;
+    gap: 6.5rem;
+}
+
+.overviewdescription {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    flex: 1 0 0;
+}
+
+.overviewtext {
+    align-self: stretch;
+    color: var(--Neutral-700, #4F4F4F);
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 140%;
+}
+
+.overviewlabelledvalues {
+    display: flex;
+    width: 15rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.overviewlabelledvalue {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.overviewlabel {
+    align-self: stretch;
+    color: var(--Neutral-600, #5D5D5D);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.overviewvalue {
+    align-self: stretch;
+    color: var(--Neutral-800, #454545);
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 140%;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+}
+
+.sectiontitle {
+    align-self: stretch;
+    color: var(--Neutral-700, #4F4F4F);
+    font-size: 4rem;
+    font-weight: 200;
+    line-height: 140%;
+}
+
+.processvisual {
+    display: flex;
+    align-items: flex-start;
+    gap: 4rem;
+}
+
+.processvisualstep {
+    display: flex;
+    width: 18rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.processvisualicon {
+    width: 10rem;
+    height: 7rem;
+    fill: var(--Neutral-900, #3D3D3D);
+}
+
+.processvisualsteptext {
+    align-self: stretch;
+    color: var(--Neutral-800, #454545);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 140%;
+}
+
+.processsteps {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4rem;
+}
+
+.processstep {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    align-self: stretch;
+}
+
+.processsteptitle {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    align-self: stretch;
+}
+
+.processsteptitlenumber {
+    color: var(--Neutral-400, #888);
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 140%;
+}
+
+.processsteptitletext {
+    color: var(--Neutral-700, #4F4F4F);
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 140%;
+}
+
+.processstepcontent {
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    gap: 4rem;
+}
+
+.processsteptext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.25rem;
+    flex: 1 0 0;
+}
+
+.processsteptextparagraph {
+    align-self: stretch;
+    color: var(--Neutral-700, #4F4F4F);
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 140%;
+}
+
+.processstepimage1,
+.processstepimage3 {
+    border: 1px solid var(--Neutral-600, #5D5D5D);
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.25);
+}
+
+.processstepimage2 {
+    border-radius: 2rem;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.15), 0px 0px 8px 0px rgba(0, 0, 0, 0.30);
+}
+
+.footer {
+    display: flex;
+    padding: 7rem 0rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    background: var(--Neutral-100, #E7E7E7);
+  }
+  
+  .footercontent {
+    display: flex;
+    align-items: center;
+    gap: 12rem;
+  }
+  
+  .footertitle {
+    color: var(--Neutral-900, #3D3D3D);
+    font-size: 5.25rem;
+    font-weight: 300;
+    letter-spacing: -0.105rem;
+  }
+  
+  .footerdetails {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .footertextstrong {
+    color: var(--Neutral-800, #454545);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 140%;
+  }
+  
+  .footertext {
+    color: var(--Neutral-600, #5D5D5D);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 140%;
+  }
