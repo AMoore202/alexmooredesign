@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import styles from "./bidscasestudy.module.css";
 import Image from "next/image";
-import Link from "next/link";
+import Footer from "../ui/Footer";
 import LoFiIdeationIcon from "../ui/icons/lofiideationicon";
 import OnSiteIterationIcon from "../ui/icons/OnSiteIterationIcon";
 import DesignAndDevIcon from "../ui/icons/DesignAndDevIcon";
@@ -131,24 +131,7 @@ export default function Page() {
             </div>
         </div>
       </div>
-      <div id="footer" className={styles.footer}>
-        <div className={styles.footercontent}>
-          <div className={styles.footertitle}>
-            Alex Moore
-          </div>
-          <div className={styles.footerdetails}>
-            <a className={styles.footertextstrong} href="mailto:alexandermoore202@gmail.com">
-              alexandermoore202@gmail.com
-            </a>
-            <a className={styles.footertext} href="https://www.figma.com/design/7AF2r0eLmBXJNbAAsiSQ4a/Playground?node-id=564%3A2170&t=yjElnhbODa1ZYZcV-1" target="_blank">
-              designed in figma
-            </a>
-            <a className={styles.footertext} href="https://github.com/AMoore202/alexmooredesign" target="_blank">
-              developed using next.js
-            </a>
-          </div>
-        </div>
-      </div>
+      <Footer />
     </div>
   );
 }
