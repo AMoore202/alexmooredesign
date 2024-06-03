@@ -16,6 +16,10 @@
     box-shadow: 0px 4px 16px 0px rgba(150, 99, 150, 0.16), 0px 0px 8px 0px rgba(150, 99, 150, 0.15);
 }
 
+.bidsmockup {
+    max-width: 59.1rem;
+}
+
 .content {
     display: flex;
     flex-direction: column;
@@ -121,7 +125,7 @@
     gap: 0.5rem;
 }
 
-.processvisualicon {
+.processvisualstepicon {
     width: 10rem;
     height: 7rem;
     fill: var(--Neutral-900, #3D3D3D);
@@ -141,6 +145,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 4rem;
+    align-self: stretch;
 }
 
 .processstep {
@@ -198,55 +203,131 @@
 
 .processstepimage1,
 .processstepimage3 {
+    max-width: 32.5rem;
     border: 1px solid var(--Neutral-600, #5D5D5D);
     box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.25);
 }
 
 .processstepimage2 {
+    max-width: 32.5rem;
     border-radius: 2rem;
     box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.15), 0px 0px 8px 0px rgba(0, 0, 0, 0.30);
 }
 
-.footer {
-    display: flex;
-    padding: 7rem 0rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-self: stretch;
-    background: var(--Neutral-100, #E7E7E7);
-  }
-  
-  .footercontent {
-    display: flex;
-    align-items: center;
-    gap: 12rem;
-  }
-  
-  .footertitle {
-    color: var(--Neutral-900, #3D3D3D);
-    font-size: 5.25rem;
-    font-weight: 300;
-    letter-spacing: -0.105rem;
-  }
-  
-  .footerdetails {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-  }
-  
-  .footertextstrong {
-    color: var(--Neutral-800, #454545);
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 140%;
-  }
-  
-  .footertext {
-    color: var(--Neutral-600, #5D5D5D);
-    font-size: 1rem;
-    font-weight: 300;
-    line-height: 140%;
-  }
+@media (max-width: 1200px) {
+    .main {
+        gap: 2rem;
+    }
+
+    .mockup {
+        height: 12.5rem;
+    }
+
+    .bidsmockup {
+        max-width: 18.8rem;
+    }
+
+    .content {
+        padding: 0rem 1.5rem;
+        gap: 2.5rem;
+        align-self: stretch;
+    }
+
+    .section {
+        align-self: stretch;
+    }
+
+    .overview {
+        gap: 0.5rem;
+        align-self: stretch;
+    }
+
+    .overviewtitle {
+        font-size: 1.5rem;
+    }
+
+    .overviewcontent {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .overviewtext {
+        font-size: 0.875rem;
+    }
+
+    .overviewlabelledvalues {
+        gap: 1rem;
+        align-self: stretch;
+    }
+
+    .overviewlabel {
+        font-size: 0.75rem;
+    }
+
+    .overviewvalue {
+        font-size: 1.125rem;
+    }
+
+    .section {
+        gap: 1.5rem;
+    }
+
+    .sectiontitle {
+        font-size: 1.5rem;
+    }
+
+    .processvisual {
+        gap: 1.5rem;
+    }
+
+    .processvisualstep {
+        gap: 0.25rem;
+        width: 5.75rem;
+    }
+
+    .processvisualstepicon {
+        width: 4rem;
+        height: 3rem;
+    }
+
+    .processvisualsteptext {
+        font-size: 0.875rem;
+    }
+
+    .processsteps {
+        gap: 2rem;
+    }
+
+    .processstep {
+        gap: 0.5rem;
+        align-self: stretch;
+    }
+
+    .processstepcontent {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        align-self: stretch;
+    }
+
+    .processsteptitle {
+        gap: 0.5rem;
+    }
+
+    .processsteptitlenumber {
+        font-size: 1.25rem;
+    }
+
+    .processsteptitletext {
+        font-size: 1.25rem;
+    }
+
+    .processsteptext {
+        gap: 1.25rem;
+    }
+
+    .processsteptextparagraph {
+        font-size: 0.875rem;
+    }
+}

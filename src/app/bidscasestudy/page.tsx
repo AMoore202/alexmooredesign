@@ -10,13 +10,15 @@ export default function Page() {
   return(
     <div className={styles.main}>
       <div className={styles.mockup}>
-        <Image 
-          src="/images/bidsmockup.png"
-          // layout="responsive"
-          width={945}
-          height={640}
-          alt='Mockup of a tv information display'
-        />
+        <div className={styles.bidsmockup}>
+          <Image 
+            src="/images/bidsmockup.png"
+            layout="responsive"
+            width={945}
+            height={640}
+            alt='Mockup of a tv information display'
+          />
+        </div>
       </div>
       <div className={styles.content}>
         <div className={styles.overview}>
@@ -73,14 +75,16 @@ export default function Page() {
                       To kick off the design, I started by working in low-fidelity. On this kind of project they are a multitude of different pieces of information that could be presented on the screen - and everyone has a different opinion on what information is most important. To sort through the noise, I wanted to be able to move things around fast and not have my critique partners focused on the UI details. Using this approach, I was able to put the focus on what kind of decision each piece of information would drive allowing us to pinpoint what was most important to a user and when that information is valuable to them.
                     </div>
                   </div>
-                  <Image
-                    src="/images/lofibidsmockup.png"
-                    className={styles.processstepimage1}
-                    // layout="responsive"
-                    width={520}
-                    height={288}
-                    alt="Low fidelity baggage info display"
-                  />
+                  <div className={styles.processstepimage1}>
+                    <Image
+                      src="/images/lofibidsmockup.png"
+                      className={styles.processstepimage1}
+                      layout="responsive"
+                      width={520}
+                      height={288}
+                      alt="Low fidelity baggage info display"
+                    />
+                  </div>
                 </div>
               </div>
               <div className={styles.processstep}>
@@ -97,14 +101,16 @@ export default function Page() {
                       Testing out UI designs can be difficult while your users and busy slinging bags. In order to make it easier and more engaging for our participants, I printed out paper copies of the low-fidelity mockups I had created in the previous step. Allowing users to write directly on the paper made it more accessible to them and easy for us to identify what they focused on and what was just noise to them. Although each airline had a different process, we were able to identify commonality in key data points.
                     </div>
                   </div>
-                  <Image
-                    src="/images/carousel.png"
-                    className={styles.processstepimage2}
-                    // layout="responsive"
-                    width={520}
-                    height={370}
-                    alt="Photo of a baggage conveyor belt"
-                  />
+                  <div className={styles.processstepimage2}>
+                    <Image
+                      src="/images/carousel.png"
+                      className={styles.processstepimage2}
+                      layout="responsive"
+                      width={520}
+                      height={370}
+                      alt="Photo of a baggage conveyor belt"
+                    />
+                  </div>
                 </div>
               </div>
               <div className={styles.processstep}>
@@ -118,14 +124,16 @@ export default function Page() {
                       The on-site feedback and iteration gave us a wealth of information to distill. At this point in the project I started turning those insights into design patterns. For the handoff documentation, I wanted to capture both the designs specs and the user context that led to the design specs. By capturing the user insights and design details in a unified format, I was able to capture the intention of my designs and allow more flexibility for the dev team in driving value for the user.
                     </div>
                   </div>
-                  <Image
-                    src="/images/bidsdesignbriefslide.png"
-                    className={styles.processstepimage3}
-                    // layout="responsive"
-                    width={520}
-                    height={292}
-                    alt="Powerpoint slide depicting how bags are being loaded at a specific airport"
-                  />
+                  <div className={styles.processstepimage3}>
+                    <Image
+                      src="/images/bidsdesignbriefslide.png"
+                      className={styles.processstepimage3}
+                      layout="responsive"
+                      width={520}
+                      height={292}
+                      alt="Powerpoint slide depicting how bags are being loaded at a specific airport"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
