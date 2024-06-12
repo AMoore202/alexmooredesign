@@ -21,7 +21,7 @@ export default function Home() {
           <div className={styles.casestudy1}>
             <div className={styles.casestudystub1}>
               <div className={styles.casestudystubtext}>
-                Refreshed UI for loading luggage  on a flight ✈️
+                Refreshed UI for loading luggage on a flight ✈️
               </div>
             </div>
             <div className={styles.casestudycontent1}>

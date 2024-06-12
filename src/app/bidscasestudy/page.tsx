@@ -2,7 +2,7 @@
 import styles from "./bidscasestudy.module.css";
 import Image from "next/image";
 import Footer from "../ui/Footer";
-import LoFiIdeationIcon from "../ui/icons/lofiideationicon";
+import LoFiIdeationIcon from "../ui/icons/LoFiIdeationIcon";
 import OnSiteIterationIcon from "../ui/icons/OnSiteIterationIcon";
 import DesignAndDevIcon from "../ui/icons/DesignAndDevIcon";
 
