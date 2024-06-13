@@ -203,15 +203,25 @@
 
 .processstepimage1,
 .processstepimage3 {
-    max-width: 32.5rem;
+    /* max-width: 32.5rem; */
     border: 1px solid var(--Neutral-600, #5D5D5D);
-    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.25);
+    /* box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.25); */
 }
 
-.processstepimage2 {
-    max-width: 32.5rem;
-    border-radius: 2rem;
+.processstepimage1,
+.processstepimage2,
+.processstepimage3 {
+    /* height: 23.12988rem; */
+    /* max-width: 32.5rem; */
+    /* width: 32.5rem; */
+    /* object-fit: contain; */
     box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.15), 0px 0px 8px 0px rgba(0, 0, 0, 0.30);
+}
+
+.processstepimagecontainer {
+    width: 32.5rem;
+    height: 23.12988rem;
+    position: relative;
 }
 
 @media (max-width: 1200px) {
