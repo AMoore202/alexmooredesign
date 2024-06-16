@@ -274,8 +274,11 @@
     }
 
     .overviewlabelledvalues {
-        gap: 1rem;
+        gap: 1rem 3rem;
         align-self: stretch;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
 
     .overviewlabel {

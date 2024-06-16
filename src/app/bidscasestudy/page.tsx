@@ -28,7 +28,7 @@ export default function Page() {
           <div className={styles.overviewcontent}>
             <div className={styles.overviewdescription}>
               <div className={styles.overviewtext}>
-                Baggage information displays (known in the industry as BIDs) are a common sight in any airport's bag room. These displays, however, are often outdated UIs showing a grid of numbers your need an guide to interpret. On this project my team and I wanted to create a modern BIDs system, one that was empowering for baggage handlers and provided them with the  information they need to load bags intuitively and efficiently.
+                Baggage information displays (known in the industry as BIDs) are a common sight in any airport's bag room. These displays, however, are often outdated UIs showing a grid of numbers you need an guide to interpret. On this project my team and I wanted to create a modern BIDs system, one that was empowering for baggage handlers and provided them with the  information they need to load bags intuitively and efficiently.
               </div>
             </div>
             <div className={styles.overviewlabelledvalues}>
