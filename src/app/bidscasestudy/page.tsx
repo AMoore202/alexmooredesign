@@ -10,15 +10,22 @@ export default function Page() {
   return(
     <div className={styles.main}>
       <div className={styles.mockup}>
-        <div className={styles.bidsmockup}>
+        {/* <div className={styles.bidsmockupdesktop}> */}
           <Image 
             src="/images/bidsmockup.png"
-            layout="responsive"
+            className={styles.bidsmockupdesktop}
             width={945}
             height={640}
             alt='Mockup of a tv information display'
           />
-        </div>
+          <Image 
+            src="/images/bidsmockup.png"
+            className={styles.bidsmockupmobile}
+            width={300}
+            height={203}
+            alt='Mockup of a tv information display'
+          />
+        {/* </div> */}
       </div>
       <div className={styles.content}>
         <div className={styles.overview}>
