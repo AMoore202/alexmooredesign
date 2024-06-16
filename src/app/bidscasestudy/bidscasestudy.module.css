@@ -247,7 +247,8 @@
     .content {
         padding: 0rem 1.5rem;
         gap: 2.5rem;
-        align-self: stretch;
+        /* align-self: stretch; */
+        max-width: 24rem;
     }
 
     .section {
