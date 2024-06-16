@@ -4,6 +4,7 @@ import styles from "./home.module.css";
 import Image from 'next/image';
 import DesktopNavbar from "./ui/DesktopNavbar";
 import MobileNavbar from "./ui/MobileNavbar";
+import Footer from "./ui/Footer";
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
           <div className={styles.casestudy1}>
             <div className={styles.casestudystub1}>
               <div className={styles.casestudystubtext}>
-                Refreshed UI for loading luggage  on a flight ✈️
+                Refreshed UI for loading luggage on a flight ✈️
               </div>
             </div>
             <div className={styles.casestudycontent1}>
@@ -81,7 +82,7 @@ export default function Home() {
               Unlike other designers, my background is not graphic design, branding, or animation. Instead, I come from the world of quantitative and qualitative research. This allows me to build streamlined interfaces that empower users to interact with complex systems in a way that makes sense to them.
             </div>
             <div className={styles.aboutmetext}>
-            I am currently working at Brock Solutions, reshaping how airlines keep track of their bags. Normally, I call Canada home but I am currently exploring the incredible beauty of the Scottish lowlands.
+              I am currently working at Brock Solutions, reshaping how airlines keep track of their bags. Normally, I call Canada home but I am currently exploring the incredible beauty of the Scottish lowlands.
             </div>
           </div>
           <div className={styles.aboutmeimage}>
@@ -131,7 +132,7 @@ export default function Home() {
                 Technical Skillset
               </div>
               <div className={styles.skillssectiontext}>
-              I do my best work when I am embedded with my development team throughout the process. From the start of a project, I work to understand our codebase and am not afraid to put up a PR when I can.
+                I do my best work when I am embedded with my development team throughout the process. From the start of a project, I work to understand our codebase and am not afraid to put up a PR when I can.
               </div>
             </div>
             <div className={styles.skillssection}>
@@ -145,24 +146,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div id="footer" className={styles.footer}>
-        <div className={styles.footercontent}>
-          <div className={styles.footertitle}>
-            Alex Moore
-          </div>
-          <div className={styles.footerdetails}>
-            <a className={styles.footertextstrong} href="mailto:alexandermoore202@gmail.com">
-              alexandermoore202@gmail.com
-            </a>
-            <a className={styles.footertext} href="https://www.figma.com/design/7AF2r0eLmBXJNbAAsiSQ4a/Playground?node-id=564%3A2170&t=yjElnhbODa1ZYZcV-1" target="_blank">
-              designed in figma
-            </a>
-            <a className={styles.footertext} href="https://github.com/AMoore202/alexmooredesign" target="_blank">
-              developed using next.js
-            </a>
-          </div>
-        </div>
-      </div>
+      <Footer />
     </main>
   );
 }
