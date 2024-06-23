@@ -45,7 +45,7 @@ export default function Home() {
             <div className={styles.casestudycontent2}>
               <div className={styles.casestudyimage2}>
                 <Image 
-                  src="/images/bagsummarymockup.png"
+                  src="/images/bagsummarymobilemockup.png"
                   layout="responsive"
                   width={540}
                   height={864}

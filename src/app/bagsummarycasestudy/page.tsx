@@ -3,28 +3,42 @@ import styles from "../casestudies.module.css";
 import bagsummarystyles from "./bagsummarycasestudy.module.css";
 import Image from "next/image";
 import Footer from "../ui/Footer";
-import LoFiIdeationIcon from "../ui/icons/LoFiIdeationIcon";
-import OnSiteIterationIcon from "../ui/icons/OnSiteIterationIcon";
-import DesignAndDevIcon from "../ui/icons/DesignAndDevIcon"; 
+import UserVideoIcon from "../ui/icons/UserVideoIcon";
+import DesignCritiqueIcon from "../ui/icons/DesignCritiqueIcon";
+import IterativeDevIcon from "../ui/icons/IterativeDevIcon"; 
 
 export default function Page() {
   return(
     <div className={styles.main}>
       <div className={bagsummarystyles.mockup}>
         <Image 
-          src="/images/bidsmockup.png"
-          className={bagsummarystyles.bidsmockupdesktop}
-          width={945}
-          height={640}
-          alt='Mockup of a tv information display'
+          src="/images/bagsummarymobilemockup.png"
+          className={styles.mockupimagedesktop}
+          width={391}
+          height={626}
+          alt='Mockup of a phone displaying the timeline of a lost bag'
+        />
+        <Image
+          src="/images/bagsummarydesktopmockup.png"
+          className={styles.mockupimagedesktop}
+          width={1039}
+          height={639}
+          alt='Mockup of a desktop displaying the timeline of a lost bag'
         />
         <Image 
-          src="/images/bidsmockup.png"
-          className={bagsummarystyles.bidsmockupmobile}
-          width={300}
-          height={203}
-          alt='Mockup of a tv information display'
+          src="/images/bagsummarymobilemockup.png"
+          className={styles.mockupimagemobile}
+          width={333}
+          height={533}
+          alt='Mockup of a phone displaying the timeline of a lost bag'
         />
+        {/* <Image
+          src="/images/bagsummarydesktopmockup.png"
+          className={styles.mockupimagemobile}
+          width={300}
+          height={200}
+          alt='Mockup of a desktop displaying the timeline of a lost bag'
+        /> */}
       </div>
       <div className={styles.content}>
         <div className={styles.overview}>
@@ -57,15 +71,15 @@ export default function Page() {
             <div className={styles.sectiontitle}>The Process</div>
             <div className={styles.processvisual}>
               <div className={styles.processvisualstep}>
-                <LoFiIdeationIcon className={bagsummarystyles.processvisualstepicon} />
+                <UserVideoIcon className={styles.processvisualstepicon} />
                 <div className={styles.processvisualsteptext}>Understanding the User</div>
               </div>
               <div className={styles.processvisualstep}>
-                <OnSiteIterationIcon className={bagsummarystyles.processvisualstepicon} />
+                <DesignCritiqueIcon className={styles.processvisualstepicon} />
                 <div className={styles.processvisualsteptext}>Design Critiques</div>
               </div>
               <div className={styles.processvisualstep}>
-                <DesignAndDevIcon className={bagsummarystyles.processvisualstepicon} />
+                <IterativeDevIcon className={styles.processvisualstepicon} />
                 <div className={styles.processvisualsteptext}>Defining, Building, and Iterating</div>
               </div>
             </div>

@@ -13,14 +13,14 @@ export default function Page() {
       <div className={bidsstyles.mockup}>
         <Image 
           src="/images/bidsmockup.png"
-          className={bidsstyles.bidsmockupdesktop}
+          className={styles.mockupimagedesktop}
           width={945}
           height={640}
           alt='Mockup of a tv information display'
         />
         <Image 
           src="/images/bidsmockup.png"
-          className={bidsstyles.bidsmockupmobile}
+          className={styles.mockupimagemobile}
           width={300}
           height={203}
           alt='Mockup of a tv information display'
@@ -57,15 +57,15 @@ export default function Page() {
             <div className={styles.sectiontitle}>The Process</div>
             <div className={styles.processvisual}>
               <div className={styles.processvisualstep}>
-                <LoFiIdeationIcon className={bidsstyles.processvisualstepicon} />
+                <LoFiIdeationIcon className={styles.processvisualstepicon} />
                 <div className={styles.processvisualsteptext}>Low-Fidelity Ideation</div>
               </div>
               <div className={styles.processvisualstep}>
-                <OnSiteIterationIcon className={bidsstyles.processvisualstepicon} />
+                <OnSiteIterationIcon className={styles.processvisualstepicon} />
                 <div className={styles.processvisualsteptext}>On-Site Iteration</div>
               </div>
               <div className={styles.processvisualstep}>
-                <DesignAndDevIcon className={bidsstyles.processvisualstepicon} />
+                <DesignAndDevIcon className={styles.processvisualstepicon} />
                 <div className={styles.processvisualsteptext}>High-Fidelity Design and Development</div>
               </div>
             </div>

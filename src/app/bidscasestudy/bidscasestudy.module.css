@@ -8,20 +8,6 @@
     box-shadow: 0px 4px 16px 0px rgba(150, 99, 150, 0.16), 0px 0px 8px 0px rgba(150, 99, 150, 0.15);
 }
 
-.bidsmockupdesktop {
-    display: flex;
-}
-
-.bidsmockupmobile {
-    display: none;
-}
-
-.processvisualstepicon {
-    width: 10rem;
-    height: 7rem;
-    fill: var(--Neutral-900, #3D3D3D);
-}
-
 .processstepimagecontainer1,
 .processstepimagecontainer2,
 .processstepimagecontainer3 {
@@ -53,18 +39,13 @@
         height: 13rem;
     }
 
-    .bidsmockupdesktop {
+    .mockupimagedesktop {
         display: none;
     }
     
-    .bidsmockupmobile {
+    .mockupimagemobile {
         display: flex;
     }    
-
-    .processvisualstepicon {
-        width: 4rem;
-        height: 3rem;
-    }
 
     .processstepimagecontainer1,
     .processstepimagecontainer2,

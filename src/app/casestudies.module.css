@@ -4,8 +4,15 @@
     align-items: center;
     min-height: 100vh;
     gap: 6rem;
-  }
+}
 
+.mockupimagedesktop {
+    display: flex;
+}
+
+.mockupimagemobile {
+    display: none;
+}
 
 .content {
     display: flex;
@@ -112,6 +119,12 @@
     gap: 0.5rem;
 }
 
+.processvisualstepicon {
+    width: 10rem;
+    height: 7rem;
+    fill: var(--Neutral-900, #3D3D3D);
+}
+
 .processvisualsteptext {
     align-self: stretch;
     color: var(--Neutral-800, #454545);
@@ -191,10 +204,17 @@
         gap: 2rem;
     }
 
+    .mockupimagedesktop {
+        display: none;
+    }
+    
+    .mockupimagemobile {
+        display: flex;
+    }    
+
     .content {
         padding: 0rem 1.5rem;
         gap: 2.5rem;
-        /* align-self: stretch; */
         max-width: 24rem;
     }
 
@@ -251,6 +271,11 @@
     .processvisualstep {
         gap: 0.25rem;
         width: 5.75rem;
+    }
+
+    .processvisualstepicon {
+        width: 4rem;
+        height: 3rem;
     }
 
     .processvisualsteptext {

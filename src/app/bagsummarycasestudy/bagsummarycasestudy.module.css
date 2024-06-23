@@ -5,21 +5,9 @@
     justify-content: center;
     align-items: flex-start;
     background: var(--Accent-Sky, #BBCFE6);
+    overflow: hidden;
+    padding-left: 8rem;
     box-shadow: 0px 4px 16px 0px rgba(150, 99, 150, 0.16), 0px 0px 8px 0px rgba(150, 99, 150, 0.15);
-}
-
-.bidsmockupdesktop {
-    display: flex;
-}
-
-.bidsmockupmobile {
-    display: none;
-}
-
-.processvisualstepicon {
-    width: 10rem;
-    height: 7rem;
-    fill: var(--Neutral-900, #3D3D3D);
 }
 
 .processstepimagecontainer1,
@@ -47,19 +35,8 @@
 @media (max-width: 1200px) {
     .mockup {
         height: 13rem;
-    }
-
-    .bidsmockupdesktop {
-        display: none;
-    }
-    
-    .bidsmockupmobile {
-        display: flex;
-    }    
-
-    .processvisualstepicon {
-        width: 4rem;
-        height: 3rem;
+        padding-left: 0rem;
+        padding-top: 0.5rem;
     }
 
     .processstepimagecontainer1,
