@@ -1,0 +1,321 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    gap: 6rem;
+}
+
+.mockupimagedesktop {
+    display: flex;
+}
+
+.mockupimagemobile {
+    display: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5rem;
+    max-width: 74rem;
+}
+
+.overview {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.overviewtitle {
+    align-self: stretch;
+    color: var(--Neutral-700, #4F4F4F);
+    font-size: 4rem;
+    font-weight: 200;
+    line-height: 140%;
+}
+
+.overviewcontent {
+    display: flex;
+    align-items: flex-start;
+    gap: 6.5rem;
+}
+
+.overviewdescription {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    flex: 1 0 0;
+}
+
+.overviewtext {
+    align-self: stretch;
+    color: var(--Neutral-700, #4F4F4F);
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 140%;
+}
+
+.overviewlabelledvalues {
+    display: flex;
+    width: 15rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.overviewlabelledvalue {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.overviewlabel {
+    align-self: stretch;
+    color: var(--Neutral-600, #5D5D5D);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.overviewvalue {
+    align-self: stretch;
+    color: var(--Neutral-800, #454545);
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 140%;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+}
+
+.sectiontitle {
+    align-self: stretch;
+    color: var(--Neutral-700, #4F4F4F);
+    font-size: 4rem;
+    font-weight: 200;
+    line-height: 140%;
+}
+
+.processvisual {
+    display: flex;
+    align-items: flex-start;
+    gap: 4rem;
+}
+
+.processvisualstep {
+    display: flex;
+    width: 18rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.processvisualstepicon {
+    width: 10rem;
+    height: 7rem;
+    fill: var(--Neutral-900, #3D3D3D);
+}
+
+.processvisualsteptext {
+    align-self: stretch;
+    color: var(--Neutral-800, #454545);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 140%;
+}
+
+.processsteps {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4rem;
+    align-self: stretch;
+}
+
+.processstep {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    align-self: stretch;
+}
+
+.processsteptitle {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    align-self: stretch;
+}
+
+.processsteptitlenumber {
+    color: var(--Neutral-400, #888);
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 140%;
+}
+
+.processsteptitletext {
+    color: var(--Neutral-700, #4F4F4F);
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 140%;
+}
+
+.processstepcontent {
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    gap: 4rem;
+}
+
+.processsteptext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.25rem;
+    flex: 1 0 0;
+}
+
+.processsteptextparagraph {
+    align-self: stretch;
+    color: var(--Neutral-700, #4F4F4F);
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 140%;
+}
+
+.processstepimage {
+    object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+    .main {
+        gap: 2rem;
+    }
+
+    .mockupimagedesktop {
+        display: none;
+    }
+    
+    .mockupimagemobile {
+        display: flex;
+    }    
+
+    .content {
+        padding: 0rem 1.5rem;
+        gap: 2.5rem;
+        max-width: 24rem;
+    }
+
+    .section {
+        align-self: stretch;
+    }
+
+    .overview {
+        gap: 0.5rem;
+        align-self: stretch;
+    }
+
+    .overviewtitle {
+        font-size: 1.5rem;
+    }
+
+    .overviewcontent {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .overviewtext {
+        font-size: 0.875rem;
+    }
+
+    .overviewlabelledvalues {
+        gap: 1rem 3rem;
+        align-self: stretch;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .overviewlabel {
+        font-size: 0.75rem;
+    }
+
+    .overviewvalue {
+        font-size: 1.125rem;
+    }
+
+    .section {
+        gap: 1.5rem;
+    }
+
+    .sectiontitle {
+        font-size: 1.5rem;
+    }
+
+    .processvisual {
+        gap: 1.5rem;
+    }
+
+    .processvisualstep {
+        gap: 0.25rem;
+        width: 5.75rem;
+    }
+
+    .processvisualstepicon {
+        width: 4rem;
+        height: 3rem;
+    }
+
+    .processvisualsteptext {
+        font-size: 0.875rem;
+    }
+
+    .processsteps {
+        gap: 2rem;
+    }
+
+    .processstep {
+        gap: 0.5rem;
+        align-self: stretch;
+    }
+
+    .processstepcontent {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        align-self: stretch;
+    }
+
+    .processsteptitle {
+        gap: 0.5rem;
+    }
+
+    .processsteptitlenumber {
+        font-size: 1.25rem;
+    }
+
+    .processsteptitletext {
+        font-size: 1.25rem;
+    }
+
+    .processsteptext {
+        gap: 1rem;
+    }
+
+    .processsteptextparagraph {
+        font-size: 0.875rem;
+    }
+}

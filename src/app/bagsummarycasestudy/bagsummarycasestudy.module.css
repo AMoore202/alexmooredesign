@@ -4,7 +4,9 @@
     height: 39rem;
     justify-content: center;
     align-items: flex-start;
-    background: var(--Accent-Thistle, #DFC7E0);
+    background: var(--Accent-Sky, #BBCFE6);
+    overflow: hidden;
+    padding-left: 8rem;
     box-shadow: 0px 4px 16px 0px rgba(150, 99, 150, 0.16), 0px 0px 8px 0px rgba(150, 99, 150, 0.15);
 }
 
@@ -13,39 +15,29 @@
 .processstepimagecontainer3 {
     position: relative;
     width: 32.5rem;
+    border: 1px solid var(--Neutral-600, #5D5D5D);
     box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.15), 0px 0px 8px 0px rgba(0, 0, 0, 0.30);
 }
 
-.processstepimagecontainer1,
-.processstepimagecontainer3 {
-    border: 1px solid var(--Neutral-600, #5D5D5D);
-}
-
 .processstepimagecontainer1 {
-    padding-top: 23.67%;
+    padding-top: 27.67%;
 }
 
 .processstepimagecontainer2 {
-    padding-top: 30.67%;
+    padding-top: 27.6%;
 }
 
 .processstepimagecontainer3 {
-    padding-top: 24.67%;
+    padding-top: 34.5%;
 }
 
 
 @media (max-width: 1200px) {
     .mockup {
         height: 13rem;
+        padding-left: 0rem;
+        padding-top: 0.5rem;
     }
-
-    .mockupimagedesktop {
-        display: none;
-    }
-    
-    .mockupimagemobile {
-        display: flex;
-    }    
 
     .processstepimagecontainer1,
     .processstepimagecontainer2,
@@ -54,14 +46,14 @@
     }
 
     .processstepimagecontainer1 {
-        padding-top: 54.67%;
+        padding-top: 62.67%;
     }
 
     .processstepimagecontainer2 {
-        padding-top: 70.67%;
+        padding-top: 62%;
     }
 
     .processstepimagecontainer3 {
-        padding-top: 55.67%;
+        padding-top: 78%;
     }
 }

@@ -39,3 +39,16 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+ol {
+  list-style-position: outside;
+  padding-left: 1rem;
+}
+
+ol li {
+  margin-bottom: 0.5rem;
+}
+
+ol li:last-child {
+  margin-bottom: 0;
+}
