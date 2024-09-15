@@ -2,8 +2,10 @@
 import styles from "../casestudies.module.css";
 import bidsstyles from "./bidscasestudy.module.css";
 import Image from "next/image";
+import Link from "next/link";
 import Footer from "../ui/Footer";
 import {
+  CaretIcon,
   LoFiIdeationIcon,
   OnSiteIterationIcon,
   DesignAndDevIcon,
@@ -12,6 +14,10 @@ import {
 export default function Page() {
   return (
     <div className={styles.main}>
+      <Link className={styles.breadcrumb} href="..">
+        <CaretIcon className="" />
+        <p className={styles.breadcrumbtext}>Back Home</p>
+      </Link>
       <div className={bidsstyles.mockup}>
         <Image
           src="/images/bids/bidsmockup.png"

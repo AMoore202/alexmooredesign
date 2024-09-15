@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Footer from "../ui/Footer";
 import {
+  CaretIcon,
   UserVideoIcon,
   DesignCritiqueIcon,
   IterativeDevIcon,
@@ -13,6 +14,10 @@ import {
 export default function Page() {
   return (
     <div className={styles.main}>
+      <Link className={styles.breadcrumb} href="..">
+        <CaretIcon className="" />
+        <p className={styles.breadcrumbtext}>Back Home</p>
+      </Link>
       <div className={bagsummarystyles.mockup}>
         <Image
           src="/images/bagsummary/bagsummarymobilemockup.png"

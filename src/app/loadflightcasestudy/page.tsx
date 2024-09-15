@@ -4,6 +4,7 @@ import Image from "next/image";
 import Footer from "../ui/Footer";
 import Link from "next/link";
 import {
+  CaretIcon,
   DesignAuditIcon,
   DesignPrinciplesIcon,
   ExploratoryPrototypesIcon,
@@ -12,6 +13,10 @@ import {
 export default function Page() {
   return (
     <div className={styles.main}>
+      <Link className={styles.breadcrumb} href="..">
+        <CaretIcon className="" />
+        <p className={styles.breadcrumbtext}>Back Home</p>
+      </Link>
       <div className={loadflightstyles.mockup}>
         <Image
           src="/images/loadflight/loadscandesktopsuccessmockup.png"

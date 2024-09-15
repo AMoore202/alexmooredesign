@@ -42,6 +42,26 @@ export function HamburgerIcon({ className }: { className: string }) {
   );
 }
 
+export function CaretIcon({ className }: { className: string }) {
+  return (
+    <svg
+      className={className}
+      xmlns="http://www.w3.org/2000/svg"
+      width="13"
+      height="18"
+      viewBox="0 0 13 18"
+      fill="none"
+    >
+      <path
+        d="M11 1.5L3 9L11 16.5"
+        stroke="#4F4F4F"
+        strokeWidth="3"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
+
 // BIDs Icons
 export function LoFiIdeationIcon({ className }: { className: string }) {
   return (
