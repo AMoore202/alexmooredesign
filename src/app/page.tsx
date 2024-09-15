@@ -2,6 +2,7 @@
 
 import styles from "./home.module.css";
 import Image from "next/image";
+import Link from "next/link";
 import DesktopNavbar from "./ui/DesktopNavbar";
 import MobileNavbar from "./ui/MobileNavbar";
 import Footer from "./ui/Footer";
@@ -16,7 +17,7 @@ export default function Home() {
       </div>
       <div className={styles.content}>
         <div id="casestudies" className={styles.casestudies}>
-          <div className={styles.casestudy1}>
+          <Link className={styles.casestudy1} href="./loadflightcasestudy">
             <div className={styles.casestudystub1}>
               <div className={styles.casestudystubtext}>
                 Refreshed UI for loading luggage on a flight ✈️
@@ -33,8 +34,8 @@ export default function Home() {
                 />
               </div>
             </div>
-          </div>
-          <div className={styles.casestudy2}>
+          </Link>
+          <Link className={styles.casestudy2} href="./bagsummarycasestudy">
             <div className={styles.casestudystub2}>
               <div className={styles.casestudystubtext}>
                 Telling the story of a lost bag 💼
@@ -51,8 +52,8 @@ export default function Home() {
                 />
               </div>
             </div>
-          </div>
-          <div className={styles.casestudy3}>
+          </Link>
+          <Link className={styles.casestudy3} href="./bidscasestudy">
             <div className={styles.casestudystub3}>
               <div className={styles.casestudystubtext}>
                 TV displays to modernize the bag room 📺
@@ -69,7 +70,7 @@ export default function Home() {
                 />
               </div>
             </div>
-          </div>
+          </Link>
         </div>
         <div id="aboutme" className={styles.aboutme}>
           <div className={styles.aboutmecontent}>
