@@ -39,6 +39,15 @@
   gap: 4rem;
 }
 
+.casestudylinkwrapper {
+  display: flex;
+  width: 100%;
+}
+
+.casestudylinkwrapper:hover {
+  text-decoration: none;
+}
+
 .casestudy1, 
 .casestudy2, 
 .casestudy3 {
@@ -49,7 +58,9 @@
   align-self: stretch;
   border-radius: 2rem;
   background: var(--Neutral-0, #FFF);
-} 
+  text-decoration: none;
+  width: 100%;
+}
 
 .casestudy1 {
   box-shadow: 0px 4px 16px 0px rgba(52, 103, 67, 0.15), 0px 0px 8px 0px rgba(52, 103, 67, 0.15);
