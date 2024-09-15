@@ -39,6 +39,15 @@
   gap: 4rem;
 }
 
+.casestudylinkwrapper {
+  display: flex;
+  width: 100%;
+}
+
+.casestudylinkwrapper:hover {
+  text-decoration: none;
+}
+
 .casestudy1, 
 .casestudy2, 
 .casestudy3 {
@@ -50,12 +59,7 @@
   border-radius: 2rem;
   background: var(--Neutral-0, #FFF);
   text-decoration: none;
-}
-
-.casestudy1:hover,
-.casestudy2:hover, 
-.casestudy3:hover {
-  text-decoration: none;
+  width: 100%;
 }
 
 .casestudy1 {

@@ -6,6 +6,7 @@ import Link from "next/link";
 import DesktopNavbar from "./ui/DesktopNavbar";
 import MobileNavbar from "./ui/MobileNavbar";
 import Footer from "./ui/Footer";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -17,59 +18,80 @@ export default function Home() {
       </div>
       <div className={styles.content}>
         <div id="casestudies" className={styles.casestudies}>
-          <Link className={styles.casestudy1} href="./loadflightcasestudy">
-            <div className={styles.casestudystub1}>
-              <div className={styles.casestudystubtext}>
-                Refreshed UI for loading luggage on a flight ✈️
+          <Link
+            className={styles.casestudylinkwrapper}
+            href="./loadflightcasestudy"
+          >
+            <motion.div
+              className={styles.casestudy1}
+              whileHover={{ scale: 1.04 }}
+            >
+              <div className={styles.casestudystub1}>
+                <div className={styles.casestudystubtext}>
+                  Refreshed UI for loading luggage on a flight ✈️
+                </div>
               </div>
-            </div>
-            <div className={styles.casestudycontent1}>
-              <div className={styles.casestudyimage1}>
-                <Image
-                  src="/images/loadflight/loadsuccessmockup.png"
-                  layout="responsive"
-                  width={570}
-                  height={840}
-                  alt="Mockup of a hand scanner displaying a load success screen"
-                />
+              <div className={styles.casestudycontent1}>
+                <div className={styles.casestudyimage1}>
+                  <Image
+                    src="/images/loadflight/loadsuccessmockup.png"
+                    layout="responsive"
+                    width={570}
+                    height={840}
+                    alt="Mockup of a hand scanner displaying a load success screen"
+                  />
+                </div>
               </div>
-            </div>
+            </motion.div>
           </Link>
-          <Link className={styles.casestudy2} href="./bagsummarycasestudy">
-            <div className={styles.casestudystub2}>
-              <div className={styles.casestudystubtext}>
-                Telling the story of a lost bag 💼
+          <Link
+            className={styles.casestudylinkwrapper}
+            href="./bagsummarycasestudy"
+          >
+            <motion.div
+              className={styles.casestudy2}
+              whileHover={{ scale: 1.04 }}
+            >
+              <div className={styles.casestudystub2}>
+                <div className={styles.casestudystubtext}>
+                  Telling the story of a lost bag 💼
+                </div>
               </div>
-            </div>
-            <div className={styles.casestudycontent2}>
-              <div className={styles.casestudyimage2}>
-                <Image
-                  src="/images/bagsummary/bagsummarymobilemockup.png"
-                  layout="responsive"
-                  width={540}
-                  height={864}
-                  alt="Mockup of a phone showing a baggage tracking screen"
-                />
+              <div className={styles.casestudycontent2}>
+                <div className={styles.casestudyimage2}>
+                  <Image
+                    src="/images/bagsummary/bagsummarymobilemockup.png"
+                    layout="responsive"
+                    width={540}
+                    height={864}
+                    alt="Mockup of a phone showing a baggage tracking screen"
+                  />
+                </div>
               </div>
-            </div>
+            </motion.div>
           </Link>
-          <Link className={styles.casestudy3} href="./bidscasestudy">
-            <div className={styles.casestudystub3}>
-              <div className={styles.casestudystubtext}>
-                TV displays to modernize the bag room 📺
+          <Link className={styles.casestudylinkwrapper} href="./bidscasestudy">
+            <motion.div
+              className={styles.casestudy3}
+              whileHover={{ scale: 1.04 }}
+            >
+              <div className={styles.casestudystub3}>
+                <div className={styles.casestudystubtext}>
+                  TV displays to modernize the bag room 📺
+                </div>
               </div>
-            </div>
-            <div className={styles.casestudycontent3}>
-              <div className={styles.casestudyimage3}>
-                <Image
-                  src="/images/bids/bidsmockup.png"
-                  layout="responsive"
-                  width={728}
-                  height={512}
-                  alt="Mockup of a tv information display"
-                />
+              <div className={styles.casestudycontent3}>
+                <div className={styles.casestudyimage3}>
+                  <Image
+                    src="/images/bids/bidsmockup.png"
+                    layout="responsive"
+                    width={728}
+                    height={512}
+                    alt="Mockup of a tv information display"
+                  />
+                </div>
               </div>
-            </div>
+            </motion.div>
           </Link>
         </div>
         <div id="aboutme" className={styles.aboutme}>
