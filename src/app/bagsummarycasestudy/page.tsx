@@ -33,13 +33,6 @@ export default function Page() {
           height={533}
           alt="Mockup of a phone displaying the timeline of a lost bag"
         />
-        {/* <Image
-          src="/images/bagsummarydesktopmockup.png"
-          className={styles.mockupimagemobile}
-          width={300}
-          height={200}
-          alt='Mockup of a desktop displaying the timeline of a lost bag'
-        /> */}
       </div>
       <div className={styles.content}>
         <div className={styles.overview}>
