@@ -4,30 +4,32 @@ import bagsummarystyles from "./bagsummarycasestudy.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "../ui/Footer";
-import UserVideoIcon from "../ui/icons/UserVideoIcon";
-import DesignCritiqueIcon from "../ui/icons/DesignCritiqueIcon";
-import IterativeDevIcon from "../ui/icons/IterativeDevIcon";
+import {
+  UserVideoIcon,
+  DesignCritiqueIcon,
+  IterativeDevIcon,
+} from "../ui/Icons";
 
 export default function Page() {
   return (
     <div className={styles.main}>
       <div className={bagsummarystyles.mockup}>
         <Image
-          src="/images/bagsummarymobilemockup.png"
+          src="/images/bagsummary/bagsummarymobilemockup.png"
           className={styles.mockupimagedesktop}
           width={391}
           height={626}
           alt="Mockup of a phone displaying the timeline of a lost bag"
         />
         <Image
-          src="/images/bagsummarydesktopmockup.png"
+          src="/images/bagsummary/bagsummarydesktopmockup.png"
           className={styles.mockupimagedesktop}
           width={1039}
           height={639}
           alt="Mockup of a desktop displaying the timeline of a lost bag"
         />
         <Image
-          src="/images/bagsummarymobilemockup.png"
+          src="/images/bagsummary/bagsummarymobilemockup.png"
           className={styles.mockupimagemobile}
           width={333}
           height={533}
@@ -113,7 +115,7 @@ export default function Page() {
                 </div>
                 <div className={bagsummarystyles.processstepimagecontainer1}>
                   <Image
-                    src="/images/bagsummarypersona.png"
+                    src="/images/bagsummary/bagsummarypersona.png"
                     className={styles.processstepimage}
                     fill
                     sizes="(max-width: 1200px) 100vw, (min-width: 1201px) 32.5rem"
@@ -160,7 +162,7 @@ export default function Page() {
                 </div>
                 <div className={bagsummarystyles.processstepimagecontainer2}>
                   <Image
-                    src="/images/designcritique.png"
+                    src="/images/bagsummary/designcritique.png"
                     className={styles.processstepimage}
                     fill
                     sizes="(max-width: 1200px) 100vw, (min-width: 1201px) 32.5rem"
@@ -207,7 +209,7 @@ export default function Page() {
                 </div>
                 <div className={bagsummarystyles.processstepimagecontainer3}>
                   <Image
-                    src="/images/gherkin.png"
+                    src="/images/bagsummary/gherkin.png"
                     className={styles.processstepimage}
                     fill
                     sizes="(max-width: 1200px) 100vw, (min-width: 1201px) 32.5rem"

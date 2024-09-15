@@ -3,23 +3,25 @@ import styles from "../casestudies.module.css";
 import bidsstyles from "./bidscasestudy.module.css";
 import Image from "next/image";
 import Footer from "../ui/Footer";
-import LoFiIdeationIcon from "../ui/icons/LoFiIdeationIcon";
-import OnSiteIterationIcon from "../ui/icons/OnSiteIterationIcon";
-import DesignAndDevIcon from "../ui/icons/DesignAndDevIcon";
+import {
+  LoFiIdeationIcon,
+  OnSiteIterationIcon,
+  DesignAndDevIcon,
+} from "../ui/Icons";
 
 export default function Page() {
   return (
     <div className={styles.main}>
       <div className={bidsstyles.mockup}>
         <Image
-          src="/images/bidsmockup.png"
+          src="/images/bids/bidsmockup.png"
           className={styles.mockupimagedesktop}
           width={945}
           height={640}
           alt="Mockup of a tv information display"
         />
         <Image
-          src="/images/bidsmockup.png"
+          src="/images/bids/bidsmockup.png"
           className={styles.mockupimagemobile}
           width={300}
           height={203}
@@ -105,7 +107,7 @@ export default function Page() {
                 </div>
                 <div className={bidsstyles.processstepimagecontainer1}>
                   <Image
-                    src="/images/lofibidsmockup.png"
+                    src="/images/bids/lofibidsmockup.png"
                     className={styles.processstepimage}
                     fill
                     sizes="(max-width: 1200px) 100vw, (min-width: 1201px) 32.5rem"
@@ -147,7 +149,7 @@ export default function Page() {
                 </div>
                 <div className={bidsstyles.processstepimagecontainer2}>
                   <Image
-                    src="/images/carousel.png"
+                    src="/images/bids/carousel.png"
                     className={styles.processstepimage}
                     fill
                     sizes="(max-width: 1200px) 100vw, (min-width: 1201px) 32.5rem"
@@ -179,7 +181,7 @@ export default function Page() {
                 </div>
                 <div className={bidsstyles.processstepimagecontainer3}>
                   <Image
-                    src="/images/bidsdesignbriefslide.png"
+                    src="/images/bids/bidsdesignbriefslide.png"
                     className={styles.processstepimage}
                     fill
                     sizes="(max-width: 1200px) 100vw, (min-width: 1201px) 32.5rem"

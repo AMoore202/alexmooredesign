@@ -4,8 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import styles from "./MobileNavbar.module.css";
 import { motion } from "framer-motion";
-import CloseIcon from "@/app/ui/icons/CloseIcon";
-import HamburgerIcon from "@/app/ui/icons/HamburgerIcon";
+import { CloseIcon, HamburgerIcon } from "./Icons";
 
 export default function MobileNavbar() {
   const [menuOpen, setMenuOpen] = useState(false);

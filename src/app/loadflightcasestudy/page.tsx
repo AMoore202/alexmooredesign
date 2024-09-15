@@ -2,38 +2,40 @@ import styles from "../casestudies.module.css";
 import loadflightstyles from "./loadflightcasestudy.module.css";
 import Image from "next/image";
 import Footer from "../ui/Footer";
-import DesignAuditIcon from "../ui/icons/DesignAuditIcon";
-import DesignPrinciplesIcon from "../ui/icons/DesignPrinciplesIcon";
-import ExploratoryPrototypesIcon from "../ui/icons/ExploratoryPrototypesIcons";
 import Link from "next/link";
+import {
+  DesignAuditIcon,
+  DesignPrinciplesIcon,
+  ExploratoryPrototypesIcon,
+} from "../ui/Icons";
 
 export default function Page() {
   return (
     <div className={styles.main}>
       <div className={loadflightstyles.mockup}>
         <Image
-          src="/images/loadscandesktopsuccessmockup.png"
+          src="/images/loadflight/loadscandesktopsuccessmockup.png"
           className={styles.mockupimagedesktop}
           width={398}
           height={624}
           alt="Mockup of a hand scanner showing a success screen"
         />
         <Image
-          src="/images/loadscandesktopalertmockup.png"
+          src="/images/loadflight/loadscandesktopalertmockup.png"
           className={styles.mockupimagedesktop}
           width={398}
           height={624}
           alt="Mockup of a hand scanner showing an alert screen"
         />
         <Image
-          src="/images/loadscandesktopexceptionmockup.png"
+          src="/images/loadflight/loadscandesktopexceptionmockup.png"
           className={styles.mockupimagedesktop}
           width={398}
           height={624}
           alt="Mockup of a hand scanner showing an exception screen"
         />
         <Image
-          src="/images/loadsuccessmockup.png"
+          src="/images/loadflight/loadsuccessmockup.png"
           className={styles.mockupimagemobile}
           width={271}
           height={398}
@@ -125,7 +127,7 @@ export default function Page() {
                 </div>
                 <div className={loadflightstyles.processstepimagecontainer1}>
                   <Image
-                    src="/images/loadexceptiondesignaudit.png"
+                    src="/images/loadflight/loadexceptiondesignaudit.png"
                     className={styles.processstepimage}
                     fill
                     sizes="(max-width: 1200px) 100vw, (min-width: 1201px) 32.5rem"
@@ -177,7 +179,7 @@ export default function Page() {
                 </div>
                 <div className={loadflightstyles.processstepimagecontainer2}>
                   <Image
-                    src="/images/loadexceptionhierarchy.png"
+                    src="/images/loadflight/loadexceptionhierarchy.png"
                     className={styles.processstepimage}
                     fill
                     sizes="(max-width: 1200px) 100vw, (min-width: 1201px) 32.5rem"
@@ -223,7 +225,7 @@ export default function Page() {
                   </div>
                   <div className={loadflightstyles.qrcodeparagraph}>
                     <Image
-                      src="/images/loadsuccessprototypeqrcode.png"
+                      src="/images/loadflight/loadsuccessprototypeqrcode.png"
                       width={256}
                       height={256}
                       alt="https://loadsuccessprototype.vercel.app/"
@@ -232,7 +234,7 @@ export default function Page() {
                 </div>
                 <div className={loadflightstyles.processstepimagecontainer3}>
                   <Image
-                    src="/images/baseloadscreenmockup.png"
+                    src="/images/loadflight/baseloadscreenmockup.png"
                     className={styles.processstepimage}
                     fill
                     sizes="(max-width: 1200px) 100vw, (min-width: 1201px) 32.5rem"

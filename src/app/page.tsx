@@ -25,7 +25,7 @@ export default function Home() {
             <div className={styles.casestudycontent1}>
               <div className={styles.casestudyimage1}>
                 <Image
-                  src="/images/loadsuccessmockup.png"
+                  src="/images/loadflight/loadsuccessmockup.png"
                   layout="responsive"
                   width={570}
                   height={840}
@@ -43,7 +43,7 @@ export default function Home() {
             <div className={styles.casestudycontent2}>
               <div className={styles.casestudyimage2}>
                 <Image
-                  src="/images/bagsummarymobilemockup.png"
+                  src="/images/bagsummary/bagsummarymobilemockup.png"
                   layout="responsive"
                   width={540}
                   height={864}
@@ -61,7 +61,7 @@ export default function Home() {
             <div className={styles.casestudycontent3}>
               <div className={styles.casestudyimage3}>
                 <Image
-                  src="/images/bidsmockup.png"
+                  src="/images/bids/bidsmockup.png"
                   layout="responsive"
                   width={728}
                   height={512}
