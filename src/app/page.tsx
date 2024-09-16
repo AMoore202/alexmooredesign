@@ -1,6 +1,7 @@
 "use client";
 
 import styles from "./home.module.css";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import DesktopNavbar from "./ui/DesktopNavbar";
@@ -8,7 +9,28 @@ import MobileNavbar from "./ui/MobileNavbar";
 import Footer from "./ui/Footer";
 import { motion } from "framer-motion";
 
+// type CaseStudyKey = "caseStudy1" | "caseStudy2" | "caseStudy3";
+
 export default function Home() {
+  //   const [imagesLoaded, setImagesLoaded] = useState({
+  //     caseStudy1: false,
+  //     caseStudy2: false,
+  //     caseStudy3: false,
+  //   });
+
+  //   const handleImageLoad = (caseStudyKey: CaseStudyKey) => {
+  //     setImagesLoaded((prevState) => ({
+  //       ...prevState,
+  //       [caseStudyKey]: true,
+  //     }));
+  //     console.log("Image loaded", caseStudyKey);
+  //   };
+
+  //   const allImagesLoaded =
+  //     imagesLoaded.caseStudy1 &&
+  //     imagesLoaded.caseStudy2 &&
+  //     imagesLoaded.caseStudy3;
+
   return (
     <main className={styles.main}>
       <DesktopNavbar />
@@ -39,6 +61,7 @@ export default function Home() {
                     width={570}
                     height={840}
                     alt="Mockup of a hand scanner displaying a load success screen"
+                    priority={true}
                   />
                 </div>
               </div>
@@ -65,6 +88,7 @@ export default function Home() {
                     width={540}
                     height={864}
                     alt="Mockup of a phone showing a baggage tracking screen"
+                    priority={true}
                   />
                 </div>
               </div>
