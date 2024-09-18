@@ -9,28 +9,7 @@ import MobileNavbar from "./ui/MobileNavbar";
 import Footer from "./ui/Footer";
 import { motion } from "framer-motion";
 
-// type CaseStudyKey = "caseStudy1" | "caseStudy2" | "caseStudy3";
-
 export default function Home() {
-  //   const [imagesLoaded, setImagesLoaded] = useState({
-  //     caseStudy1: false,
-  //     caseStudy2: false,
-  //     caseStudy3: false,
-  //   });
-
-  //   const handleImageLoad = (caseStudyKey: CaseStudyKey) => {
-  //     setImagesLoaded((prevState) => ({
-  //       ...prevState,
-  //       [caseStudyKey]: true,
-  //     }));
-  //     console.log("Image loaded", caseStudyKey);
-  //   };
-
-  //   const allImagesLoaded =
-  //     imagesLoaded.caseStudy1 &&
-  //     imagesLoaded.caseStudy2 &&
-  //     imagesLoaded.caseStudy3;
-
   return (
     <main className={styles.main}>
       <DesktopNavbar />
