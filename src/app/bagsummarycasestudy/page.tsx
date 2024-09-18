@@ -25,6 +25,7 @@ export default function Page() {
           width={391}
           height={626}
           alt="Mockup of a phone displaying the timeline of a lost bag"
+          priority={true}
         />
         <Image
           src="/images/bagsummary/bagsummarydesktopmockup.png"
@@ -32,6 +33,7 @@ export default function Page() {
           width={1039}
           height={639}
           alt="Mockup of a desktop displaying the timeline of a lost bag"
+          priority={true}
         />
         <Image
           src="/images/bagsummary/bagsummarymobilemockup.png"
@@ -39,14 +41,15 @@ export default function Page() {
           width={333}
           height={533}
           alt="Mockup of a phone displaying the timeline of a lost bag"
+          priority={true}
         />
       </div>
-      <div className={styles.content}>
+      <main className={styles.content}>
         <div className={styles.overview}>
-          <div className={styles.overviewtitle}>Project Overview</div>
+          <h2 className={styles.overviewtitle}>Project Overview</h2>
           <div className={styles.overviewcontent}>
             <div className={styles.overviewdescription}>
-              <div className={styles.overviewtext}>
+              <p className={styles.overviewtext}>
                 Baggage tracking is based on old messaging systems that cause
                 confusion on a daily basis. For this project, my team was tasked
                 with creating a page that would allow a user to understand what
@@ -54,57 +57,55 @@ export default function Page() {
                 and an iterative approach, my team was able to build a simple UI
                 that pulled out the most important pieces of information and
                 presented them succinctly.
-              </div>
+              </p>
             </div>
             <div className={styles.overviewlabelledvalues}>
               <div className={styles.overviewlabelledvalue}>
-                <div className={styles.overviewlabel}>Role</div>
-                <div className={styles.overviewvalue}>UX/UI Design</div>
+                <p className={styles.overviewlabel}>Role</p>
+                <p className={styles.overviewvalue}>UX/UI Design</p>
               </div>
               <div className={styles.overviewlabelledvalue}>
-                <div className={styles.overviewlabel}>Status</div>
-                <div className={styles.overviewvalue}>Beta Testing</div>
+                <p className={styles.overviewlabel}>Status</p>
+                <p className={styles.overviewvalue}>Beta Testing</p>
               </div>
               <div className={styles.overviewlabelledvalue}>
-                <div className={styles.overviewlabel}>Time</div>
-                <div className={styles.overviewvalue}>Q3-Q4 2023</div>
+                <p className={styles.overviewlabel}>Time</p>
+                <p className={styles.overviewvalue}>Q3-Q4 2023</p>
               </div>
             </div>
           </div>
         </div>
         <div className={styles.section}>
-          <div className={styles.sectiontitle}>The Process</div>
+          <h2 className={styles.sectiontitle}>The Process</h2>
           <div className={styles.processvisual}>
             <div className={styles.processvisualstep}>
               <UserVideoIcon className={styles.processvisualstepicon} />
-              <div className={styles.processvisualsteptext}>
+              <p className={styles.processvisualsteptext}>
                 Understanding the User
-              </div>
+              </p>
             </div>
             <div className={styles.processvisualstep}>
               <DesignCritiqueIcon className={styles.processvisualstepicon} />
-              <div className={styles.processvisualsteptext}>
-                Design Critiques
-              </div>
+              <p className={styles.processvisualsteptext}>Design Critiques</p>
             </div>
             <div className={styles.processvisualstep}>
               <IterativeDevIcon className={styles.processvisualstepicon} />
-              <div className={styles.processvisualsteptext}>
+              <p className={styles.processvisualsteptext}>
                 Defining, Building, and Iterating
-              </div>
+              </p>
             </div>
           </div>
           <div className={styles.processsteps}>
             <div className={styles.processstep}>
               <div className={styles.processsteptitle}>
-                <div className={styles.processsteptitlenumber}>01</div>
-                <div className={styles.processsteptitletext}>
+                <p className={styles.processsteptitlenumber}>01</p>
+                <h3 className={styles.processsteptitletext}>
                   Understanding the User
-                </div>
+                </h3>
               </div>
               <div className={styles.processstepcontent}>
                 <div className={styles.processsteptext}>
-                  <div className={styles.processsteptextparagraph}>
+                  <p className={styles.processsteptextparagraph}>
                     Working as a small team (me, a product manager, and a
                     technical architect), we kicked off the project by diving
                     deep into our targeted user’s world. I led semi-structured
@@ -116,7 +117,7 @@ export default function Page() {
                     wireframes. Beyond their face value, these artifacts
                     empowered us to build a shared understanding and language of
                     what we were trying to accomplish for our users.{" "}
-                  </div>
+                  </p>
                 </div>
                 <div className={bagsummarystyles.processstepimagecontainer1}>
                   <Image
@@ -131,21 +132,21 @@ export default function Page() {
             </div>
             <div className={styles.processstep}>
               <div className={styles.processsteptitle}>
-                <div className={styles.processsteptitlenumber}>02</div>
-                <div className={styles.processsteptitletext}>
+                <p className={styles.processsteptitlenumber}>02</p>
+                <h3 className={styles.processsteptitletext}>
                   Design Critiques
-                </div>
+                </h3>
               </div>
               <div className={styles.processstepcontent}>
                 <div className={styles.processsteptext}>
-                  <div className={styles.processsteptextparagraph}>
+                  <p className={styles.processsteptextparagraph}>
                     During our research phase and beyond, I instituted a new
                     process for improving my designs. I wanted to ensure that my
                     team to give the best feedback possible so I began
                     familiarizing myself with the literature on design
                     critiques. Based on my readings, I found two key issues with
                     how I had been running my design reviews:
-                  </div>
+                  </p>
                   <ol className={styles.processsteptextparagraph}>
                     <li>
                       I wasn't explicit about design objectives at the beginning
@@ -156,14 +157,14 @@ export default function Page() {
                       the design were working well and which weren't.
                     </li>
                   </ol>
-                  <div className={styles.processsteptextparagraph}>
+                  <p className={styles.processsteptextparagraph}>
                     Based on these learnings, I made a couple small tweaks to my
                     facilitation strategy and was able to unlock better insights
                     from my team. The new structured format allowed even the
                     junior members of my team to actively participate and give
                     me poignant feedback that ultimately allowed me to rapidly
                     improve my designs.
-                  </div>
+                  </p>
                 </div>
                 <div className={bagsummarystyles.processstepimagecontainer2}>
                   <Image
@@ -178,14 +179,14 @@ export default function Page() {
             </div>
             <div className={styles.processstep}>
               <div className={styles.processsteptitle}>
-                <div className={styles.processsteptitlenumber}>03</div>
-                <div className={styles.processsteptitletext}>
+                <p className={styles.processsteptitlenumber}>03</p>
+                <h3 className={styles.processsteptitletext}>
                   Defining, Building, and Iterating
-                </div>
+                </h3>
               </div>
               <div className={styles.processstepcontent}>
                 <div className={styles.processsteptext}>
-                  <div className={styles.processsteptextparagraph}>
+                  <p className={styles.processsteptextparagraph}>
                     Once I had gotten to a good spot with the design, I began
                     working with my team to document the planned behaviour of
                     our feature. For this project we used&nbsp;
@@ -210,7 +211,7 @@ export default function Page() {
                     update our documentation, ensuring our end product was
                     meeting the goals we set out at the beginning of the
                     project.
-                  </div>
+                  </p>
                 </div>
                 <div className={bagsummarystyles.processstepimagecontainer3}>
                   <Image
@@ -225,7 +226,7 @@ export default function Page() {
             </div>
           </div>
         </div>
-      </div>
+      </main>
       <Footer />
     </div>
   );

@@ -24,6 +24,7 @@ export default function Page() {
           width={398}
           height={624}
           alt="Mockup of a hand scanner showing a success screen"
+          priority={true}
         />
         <Image
           src="/images/loadflight/loadscandesktopalertmockup.png"
@@ -31,6 +32,7 @@ export default function Page() {
           width={398}
           height={624}
           alt="Mockup of a hand scanner showing an alert screen"
+          priority={true}
         />
         <Image
           src="/images/loadflight/loadscandesktopexceptionmockup.png"
@@ -38,6 +40,7 @@ export default function Page() {
           width={398}
           height={624}
           alt="Mockup of a hand scanner showing an exception screen"
+          priority={true}
         />
         <Image
           src="/images/loadflight/loadsuccessmockup.png"
@@ -45,14 +48,15 @@ export default function Page() {
           width={271}
           height={398}
           alt="Mockup of a hand scanner showing a success screen"
+          priority={true}
         />
       </div>
-      <div className={styles.content}>
+      <main className={styles.content}>
         <div className={styles.overview}>
-          <div className={styles.overviewtitle}>Project Overview</div>
+          <h2 className={styles.overviewtitle}>Project Overview</h2>
           <div className={styles.overviewcontent}>
             <div className={styles.overviewdescription}>
-              <div className={styles.overviewtext}>
+              <p className={styles.overviewtext}>
                 At first glance, loading a flight might look like a straight
                 forward activity: simply put the bags on the plane. However,
                 once you get into the details you realize there are a number of
@@ -65,55 +69,55 @@ export default function Page() {
                 to track each bag getting load onto the flight. For this
                 project, I wanted to simplify the process for loading a bag,
                 creating a UI that was intuitive, obvious, and fool proof.
-              </div>
+              </p>
             </div>
             <div className={styles.overviewlabelledvalues}>
               <div className={styles.overviewlabelledvalue}>
-                <div className={styles.overviewlabel}>Role</div>
-                <div className={styles.overviewvalue}>UX/UI Design</div>
+                <p className={styles.overviewlabel}>Role</p>
+                <p className={styles.overviewvalue}>UX/UI Design</p>
               </div>
               <div className={styles.overviewlabelledvalue}>
-                <div className={styles.overviewlabel}>Status</div>
-                <div className={styles.overviewvalue}>In Development</div>
+                <p className={styles.overviewlabel}>Status</p>
+                <p className={styles.overviewvalue}>In Development</p>
               </div>
               <div className={styles.overviewlabelledvalue}>
-                <div className={styles.overviewlabel}>Time</div>
-                <div className={styles.overviewvalue}>Q1-Q2 2024</div>
+                <p className={styles.overviewlabel}>Time</p>
+                <p className={styles.overviewvalue}>Q1-Q2 2024</p>
               </div>
             </div>
           </div>
         </div>
         <div className={styles.section}>
-          <div className={styles.sectiontitle}>The Process</div>
+          <h2 className={styles.sectiontitle}>The Process</h2>
           <div className={styles.processvisual}>
             <div className={styles.processvisualstep}>
               <DesignAuditIcon className={styles.processvisualstepicon} />
-              <div className={styles.processvisualsteptext}>Design Audit</div>
+              <p className={styles.processvisualsteptext}>Design Audit</p>
             </div>
             <div className={styles.processvisualstep}>
               <DesignPrinciplesIcon className={styles.processvisualstepicon} />
-              <div className={styles.processvisualsteptext}>
+              <p className={styles.processvisualsteptext}>
                 Design Principles and Approaches
-              </div>
+              </p>
             </div>
             <div className={styles.processvisualstep}>
               <ExploratoryPrototypesIcon
                 className={styles.processvisualstepicon}
               />
-              <div className={styles.processvisualsteptext}>
+              <p className={styles.processvisualsteptext}>
                 Exploratory Prototypes
-              </div>
+              </p>
             </div>
           </div>
           <div className={styles.processsteps}>
             <div className={styles.processstep}>
               <div className={styles.processsteptitle}>
-                <div className={styles.processsteptitlenumber}>01</div>
-                <div className={styles.processsteptitletext}>Design Audit</div>
+                <p className={styles.processsteptitlenumber}>01</p>
+                <h3 className={styles.processsteptitletext}>Design Audit</h3>
               </div>
               <div className={styles.processstepcontent}>
                 <div className={styles.processsteptext}>
-                  <div className={styles.processsteptextparagraph}>
+                  <p className={styles.processsteptextparagraph}>
                     Our existing flow for loading a bag had been pieced together
                     over time as new requirements were added. To kick off this
                     project I wanted to scope out what was currently working
@@ -128,7 +132,7 @@ export default function Page() {
                     to change to a few key principles, I was able to deliver a
                     simple message that was appealing to our customers in the
                     change management process.
-                  </div>
+                  </p>
                 </div>
                 <div className={loadflightstyles.processstepimagecontainer1}>
                   <Image
@@ -143,14 +147,14 @@ export default function Page() {
             </div>
             <div className={styles.processstep}>
               <div className={styles.processsteptitle}>
-                <div className={styles.processsteptitlenumber}>02</div>
-                <div className={styles.processsteptitletext}>
+                <p className={styles.processsteptitlenumber}>02</p>
+                <h3 className={styles.processsteptitletext}>
                   Design Principles and Approaches
-                </div>
+                </h3>
               </div>
               <div className={styles.processstepcontent}>
                 <div className={styles.processsteptext}>
-                  <div className={styles.processsteptextparagraph}>
+                  <p className={styles.processsteptextparagraph}>
                     My next step was to take the key learnings from the audit
                     and turn them into principles that could be applied
                     throughout the design process. Because the ecosystem for
@@ -158,7 +162,7 @@ export default function Page() {
                     focused on developing strong principles that could be
                     applied to different screens as the need arose. In
                     particular, I focused on defining:
-                  </div>
+                  </p>
                   <ol className={styles.processsteptextparagraph}>
                     <li>
                       <span className={loadflightstyles.boldparagraphtext}>
@@ -195,14 +199,14 @@ export default function Page() {
             </div>
             <div className={styles.processstep}>
               <div className={styles.processsteptitle}>
-                <div className={styles.processsteptitlenumber}>03</div>
-                <div className={styles.processsteptitletext}>
+                <p className={styles.processsteptitlenumber}>03</p>
+                <h3 className={styles.processsteptitletext}>
                   Exploratory Prototypes
-                </div>
+                </h3>
               </div>
               <div className={styles.processstepcontent}>
                 <div className={styles.processsteptext}>
-                  <div className={styles.processsteptextparagraph}>
+                  <p className={styles.processsteptextparagraph}>
                     After I had developed a base approach for my designs, I
                     began designing iteratively, routinely testing out my
                     designs with our customers. An important piece of this
@@ -227,7 +231,7 @@ export default function Page() {
                       </Link>
                       &nbsp;yourself!
                     </span>
-                  </div>
+                  </p>
                   <div className={loadflightstyles.qrcodeparagraph}>
                     <Image
                       src="/images/loadflight/loadsuccessprototypeqrcode.png"
@@ -250,7 +254,7 @@ export default function Page() {
             </div>
           </div>
         </div>
-      </div>
+      </main>
       <Footer />
     </div>
   );
