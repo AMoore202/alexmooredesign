@@ -1,7 +1,6 @@
 "use client";
 
 import styles from "./home.module.css";
-import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import DesktopNavbar from "./ui/DesktopNavbar";
@@ -25,7 +24,13 @@ export default function Home() {
           >
             <motion.div
               className={styles.casestudy1}
-              whileHover={{ scale: 1.04 }}
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 100, scale: 1 }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
+              whileHover={{
+                scale: 1.04,
+                transition: { duration: 0.05, ease: "easeOut" },
+              }}
             >
               <div className={styles.casestudystub1}>
                 <div className={styles.casestudystubtext}>
@@ -52,7 +57,13 @@ export default function Home() {
           >
             <motion.div
               className={styles.casestudy2}
-              whileHover={{ scale: 1.04 }}
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 100, scale: 1 }}
+              transition={{ duration: 0.4, ease: "easeOut", delay: 0.1 }}
+              whileHover={{
+                scale: 1.04,
+                transition: { duration: 0.05, ease: "easeOut" },
+              }}
             >
               <div className={styles.casestudystub2}>
                 <div className={styles.casestudystubtext}>
@@ -76,7 +87,13 @@ export default function Home() {
           <Link className={styles.casestudylinkwrapper} href="./bidscasestudy">
             <motion.div
               className={styles.casestudy3}
-              whileHover={{ scale: 1.04 }}
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 100, scale: 1 }}
+              transition={{ duration: 0.4, ease: "easeOut", delay: 0.2 }}
+              whileHover={{
+                scale: 1.04,
+                transition: { duration: 0.05, ease: "easeOut" },
+              }}
             >
               <div className={styles.casestudystub3}>
                 <div className={styles.casestudystubtext}>
