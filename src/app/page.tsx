@@ -14,7 +14,7 @@ export default function Home() {
       <DesktopNavbar />
       <MobileNavbar />
       <div className={styles.titlebar}>
-        <div className={styles.title}>Alex Moore</div>
+        <h1 className={styles.title}>Alex Moore</h1>
       </div>
       <div className={styles.content}>
         <div id="casestudies" className={styles.casestudies}>
@@ -33,9 +33,9 @@ export default function Home() {
               }}
             >
               <div className={styles.casestudystub1}>
-                <div className={styles.casestudystubtext}>
+                <p className={styles.casestudystubtext}>
                   Refreshed UI for loading luggage on a flight ✈️
-                </div>
+                </p>
               </div>
               <div className={styles.casestudycontent1}>
                 <div className={styles.casestudyimage1}>
@@ -66,9 +66,9 @@ export default function Home() {
               }}
             >
               <div className={styles.casestudystub2}>
-                <div className={styles.casestudystubtext}>
+                <p className={styles.casestudystubtext}>
                   Telling the story of a lost bag 💼
-                </div>
+                </p>
               </div>
               <div className={styles.casestudycontent2}>
                 <div className={styles.casestudyimage2}>
@@ -96,9 +96,9 @@ export default function Home() {
               }}
             >
               <div className={styles.casestudystub3}>
-                <div className={styles.casestudystubtext}>
+                <p className={styles.casestudystubtext}>
                   TV displays to modernize the bag room 📺
-                </div>
+                </p>
               </div>
               <div className={styles.casestudycontent3}>
                 <div className={styles.casestudyimage3}>
@@ -116,22 +116,22 @@ export default function Home() {
         </div>
         <div id="aboutme" className={styles.aboutme}>
           <div className={styles.aboutmecontent}>
-            <div className={styles.aboutmetitle}>
+            <p className={styles.aboutmetitle}>
               I am a UX designer and researcher specializing in complex systems.
-            </div>
-            <div className={styles.aboutmetext}>
+            </p>
+            <p className={styles.aboutmetext}>
               Unlike other designers, my background is not graphic design,
               branding, or animation. Instead, I come from the world of
               quantitative and qualitative research. This allows me to build
               streamlined interfaces that empower users to interact with complex
               systems in a way that makes sense to them.
-            </div>
-            <div className={styles.aboutmetext}>
+            </p>
+            <p className={styles.aboutmetext}>
               I am currently working at Brock Solutions, reshaping how airlines
               keep track of their bags. Normally, I call Canada home but I am
               currently exploring the incredible beauty of the Scottish
               lowlands.
-            </div>
+            </p>
           </div>
           <div className={styles.aboutmeimage}>
             <Image
@@ -144,57 +144,55 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.skills}>
-          <div className={styles.skillstitle}>What makes me different</div>
+          <h2 className={styles.skillstitle}>What makes me different</h2>
           <div className={styles.skillsrow}>
             <div className={styles.skillssection}>
-              <div className={styles.skillssectiontitle}>Domain Knowledge</div>
-              <div className={styles.skillssectiontext}>
+              <p className={styles.skillssectiontitle}>Domain Knowledge</p>
+              <p className={styles.skillssectiontext}>
                 I do not like to create a general mockup and let the devs figure
                 out the details. Instead I dive into the domain, and work with
                 the team to figure out the details that make the difference.
-              </div>
+              </p>
             </div>
             <div className={styles.skillssection}>
-              <div className={styles.skillssectiontitle}>
+              <p className={styles.skillssectiontitle}>
                 Psychological Research Methods
-              </div>
-              <div className={styles.skillssectiontext}>
+              </p>
+              <p className={styles.skillssectiontext}>
                 In university, I studied psychology and specialized in research
                 methods. I use the foundations of my education to inform my UX
                 research process where I focus on sound psychological
                 measurement and variance-based statistical analysis.
-              </div>
+              </p>
             </div>
             <div className={styles.skillssection}>
-              <div className={styles.skillssectiontitle}>Facilitation</div>
-              <div className={styles.skillssectiontext}>
+              <p className={styles.skillssectiontitle}>Facilitation</p>
+              <p className={styles.skillssectiontext}>
                 As a co-op student, I worked at a management consultancy where I
                 routinely helped facilitate team meetings. This taught me the
                 importance of facilitating meetings to enable meaningful
                 participation and build buy-in to the end product.
-              </div>
+              </p>
             </div>
           </div>
           <div className={styles.skillsrow}>
             <div className={styles.skillssection}>
-              <div className={styles.skillssectiontitle}>
-                Technical Skillset
-              </div>
-              <div className={styles.skillssectiontext}>
+              <p className={styles.skillssectiontitle}>Technical Skillset</p>
+              <p className={styles.skillssectiontext}>
                 I do my best work when I am embedded with my development team
                 throughout the process. From the start of a project, I work to
                 understand our codebase and am not afraid to put up a PR when I
                 can.
-              </div>
+              </p>
             </div>
             <div className={styles.skillssection}>
-              <div className={styles.skillssectiontitle}>Systems Thinking</div>
-              <div className={styles.skillssectiontext}>
+              <p className={styles.skillssectiontitle}>Systems Thinking</p>
+              <p className={styles.skillssectiontext}>
                 I like to work at the system level. Whether it is defining a new
                 design pattern or creating a template for reporting research
                 findings, I like to work in ways that empower those down the
                 line to build off of what I have done.
-              </div>
+              </p>
             </div>
           </div>
         </div>
