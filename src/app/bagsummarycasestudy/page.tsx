@@ -25,6 +25,7 @@ export default function Page() {
           width={391}
           height={626}
           alt="Mockup of a phone displaying the timeline of a lost bag"
+          priority={true}
         />
         <Image
           src="/images/bagsummary/bagsummarydesktopmockup.png"
@@ -32,6 +33,7 @@ export default function Page() {
           width={1039}
           height={639}
           alt="Mockup of a desktop displaying the timeline of a lost bag"
+          priority={true}
         />
         <Image
           src="/images/bagsummary/bagsummarymobilemockup.png"
@@ -39,6 +41,7 @@ export default function Page() {
           width={333}
           height={533}
           alt="Mockup of a phone displaying the timeline of a lost bag"
+          priority={true}
         />
       </div>
       <div className={styles.content}>

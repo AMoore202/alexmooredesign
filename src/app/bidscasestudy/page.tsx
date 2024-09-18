@@ -25,6 +25,7 @@ export default function Page() {
           width={945}
           height={640}
           alt="Mockup of a tv information display"
+          priority={true}
         />
         <Image
           src="/images/bids/bidsmockup.png"
@@ -32,6 +33,7 @@ export default function Page() {
           width={300}
           height={203}
           alt="Mockup of a tv information display"
+          priority={true}
         />
       </div>
       <div className={styles.content}>

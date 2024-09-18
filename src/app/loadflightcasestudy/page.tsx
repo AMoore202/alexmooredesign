@@ -24,6 +24,7 @@ export default function Page() {
           width={398}
           height={624}
           alt="Mockup of a hand scanner showing a success screen"
+          priority={true}
         />
         <Image
           src="/images/loadflight/loadscandesktopalertmockup.png"
@@ -31,6 +32,7 @@ export default function Page() {
           width={398}
           height={624}
           alt="Mockup of a hand scanner showing an alert screen"
+          priority={true}
         />
         <Image
           src="/images/loadflight/loadscandesktopexceptionmockup.png"
@@ -38,6 +40,7 @@ export default function Page() {
           width={398}
           height={624}
           alt="Mockup of a hand scanner showing an exception screen"
+          priority={true}
         />
         <Image
           src="/images/loadflight/loadsuccessmockup.png"
@@ -45,6 +48,7 @@ export default function Page() {
           width={271}
           height={398}
           alt="Mockup of a hand scanner showing a success screen"
+          priority={true}
         />
       </div>
       <div className={styles.content}>
