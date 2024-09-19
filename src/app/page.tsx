@@ -145,7 +145,7 @@ export default function Home() {
         </div>
         <div className={styles.skills}>
           <h2 className={styles.skillstitle}>What makes me different</h2>
-          <div className={styles.skillsrow}>
+          <div className={styles.skillscontent}>
             <div className={styles.skillssection}>
               <p className={styles.skillssectiontitle}>Domain Knowledge</p>
               <p className={styles.skillssectiontext}>
@@ -174,8 +174,6 @@ export default function Home() {
                 participation and build buy-in to the end product.
               </p>
             </div>
-          </div>
-          <div className={styles.skillsrow}>
             <div className={styles.skillssection}>
               <p className={styles.skillssectiontitle}>Technical Skillset</p>
               <p className={styles.skillssectiontext}>

@@ -194,10 +194,14 @@
   line-height: 140%;
 }
 
-.skillsrow {
+.skillscontent {
   display: flex;
+  width: 64rem;
+  flex-wrap: wrap;
   align-items: flex-start;
-  gap: 5rem;
+  align-content: flex-start;
+  column-gap: 2rem;
+  row-gap: 1rem;
 }
 
 .skillssection {
@@ -242,14 +246,119 @@
   .casestudies {
     gap: 2rem;
     width: 100%;
+  }
+
+  .casestudystubtext {
+    font-size: 1.5rem;
+  }
+
+  .casestudyimage1 {
+    width: 285px;
+  }
+  
+  .casestudyimage2 {
+    width: 270px;
+  }
+  
+  .casestudyimage3 {
+    width: 340px;
+  }
+
+  .aboutme {
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+  }
+
+  .aboutmecontent {
+    gap: 0.75rem;
+    width: 100%;
+    max-width: 42rem;
+  }
+
+  .aboutmetitle {
+    font-size: 1rem;
+  }
+
+  .aboutmetext {
+    font-size: 1rem;
+  }
+
+  .skills {
+    padding-bottom: 4rem;
+    gap: 1rem;
+  }
+
+  .skillstitle {
+    font-size: 1.5rem;
+  }
+
+  .skillssectiontitle {
+    font-size: 0.875rem;
+  }
+
+  .skillssectiontext {
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 680px) and (max-width: 1200px) {
+  .casestudies{
+    max-width: 38rem;
+  }
+
+  .casestudy1,
+  .casestudy2,
+  .casestudy3 {
+    height: 17rem;
+  }
+
+  .casestudystub1,
+  .casestudystub2,
+  .casestudystub3 {
+    width: 14rem;
+  }
+
+  .casestudyimage1 {
+    width: 350px;
+  }
+  
+  .casestudyimage2 {
+    width: 350px;
+  }
+  
+  .casestudyimage3 {
+    width: 384px;
+  }
+
+  .aboutme {
+    align-items: center;
+    max-width: 40rem;
+  }
+
+  .aboutmeimage {
+    width: 75%;
+  }
+
+  .skillscontent {
+    width: 40rem;
+  }
+
+  .skillssection {
+    width: 19rem;
+  }
+}
+
+@media (max-width: 679px) {
+  .casestudies{
     max-width: 24rem;
   }
 
   .casestudy1,
   .casestudy2,
   .casestudy3 {
-    height: 21.5rem;
     flex-direction: column;
+    height: 21.5rem;
   }
 
   .casestudystub1,
@@ -279,7 +388,6 @@
 
   .casestudystubtext {
     text-align: center;
-    font-size: 1.5rem;
   }
 
   .casestudycontent1,
@@ -289,69 +397,22 @@
     height: 66.7%
   }
 
-  .casestudyimage1 {
-    width: 285px;
-  }
-  
-  .casestudyimage2 {
-    width: 270px;
-  }
-  
-  .casestudyimage3 {
-    width: 340px;
-  }
-
   .aboutme {
     flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
-    gap: 1.5rem;
-    width: 100%;
     max-width: 22rem;
-  }
-
-  .aboutmecontent {
-    gap: 0.75rem;
-    width: 100%;
-    max-width: 42rem;
-  }
-
-  .aboutmetitle {
-    font-size: 1rem;
-  }
-
-  .aboutmetext {
-    font-size: 1rem;
   }
 
   .aboutmeimage {
     width: 100%;
   }
 
-  .skills {
-    padding-bottom: 4rem;
-    gap: 1rem;
-  }
-
-  .skillstitle {
-    font-size: 1.5rem;
-  }
-
-  .skillsrow {
-    flex-direction: column;
-    gap: 1rem;
+  .skillscontent {
+    width: 100%;
+    max-width: 21rem;
   }
 
   .skillssection {
     width: 100%;
-    max-width: 24rem;
-  }
-
-  .skillssectiontitle {
-    font-size: 0.875rem;
-  }
-
-  .skillssectiontext {
-    font-size: 0.875rem;
   }
 }
