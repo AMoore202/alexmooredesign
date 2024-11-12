@@ -64,6 +64,7 @@
   width: 100%;
   animation: caseStudyFadeIn 0.5s ease-in forwards;
   opacity: 0;
+  visibility: hidden;
   transition: transform 0.2s ease-out;
 }
 
@@ -72,6 +73,13 @@
 .casestudy3:hover {
   transform: scale(1.03);
   text-decoration: none;
+}
+
+.casestudy1.visible,
+.casestudy2.visible,
+.casestudy3.visible {
+  opacity: 1;
+  visibility: visible; /* Make visible once image is loaded */
 }
 
 .casestudy1 {
