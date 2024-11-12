@@ -6,7 +6,6 @@ import Link from "next/link";
 import DesktopNavbar from "./ui/DesktopNavbar";
 import MobileNavbar from "./ui/MobileNavbar";
 import Footer from "./ui/Footer";
-import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -22,16 +21,7 @@ export default function Home() {
             className={styles.casestudylinkwrapper}
             href="./loadflightcasestudy"
           >
-            <motion.div
-              className={styles.casestudy1}
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 100, scale: 1 }}
-              transition={{ duration: 0.4, ease: "easeOut" }}
-              whileHover={{
-                scale: 1.04,
-                transition: { duration: 0.05, ease: "easeOut" },
-              }}
-            >
+            <div className={styles.casestudy1}>
               <div className={styles.casestudystub1}>
                 <p className={styles.casestudystubtext}>
                   Refreshed UI for loading luggage on a flight ✈️
@@ -49,22 +39,13 @@ export default function Home() {
                   />
                 </div>
               </div>
-            </motion.div>
+            </div>
           </Link>
           <Link
             className={styles.casestudylinkwrapper}
             href="./bagsummarycasestudy"
           >
-            <motion.div
-              className={styles.casestudy2}
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 100, scale: 1 }}
-              transition={{ duration: 0.4, ease: "easeOut", delay: 0.1 }}
-              whileHover={{
-                scale: 1.04,
-                transition: { duration: 0.05, ease: "easeOut" },
-              }}
-            >
+            <div className={styles.casestudy2}>
               <div className={styles.casestudystub2}>
                 <p className={styles.casestudystubtext}>
                   Telling the story of a lost bag 💼
@@ -82,19 +63,10 @@ export default function Home() {
                   />
                 </div>
               </div>
-            </motion.div>
+            </div>
           </Link>
           <Link className={styles.casestudylinkwrapper} href="./bidscasestudy">
-            <motion.div
-              className={styles.casestudy3}
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 100, scale: 1 }}
-              transition={{ duration: 0.4, ease: "easeOut", delay: 0.2 }}
-              whileHover={{
-                scale: 1.04,
-                transition: { duration: 0.05, ease: "easeOut" },
-              }}
-            >
+            <div className={styles.casestudy3}>
               <div className={styles.casestudystub3}>
                 <p className={styles.casestudystubtext}>
                   TV displays to modernize the bag room 📺
@@ -111,7 +83,7 @@ export default function Home() {
                   />
                 </div>
               </div>
-            </motion.div>
+            </div>
           </Link>
         </div>
         <div id="aboutme" className={styles.aboutme}>
