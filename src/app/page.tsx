@@ -6,7 +6,8 @@ import Link from "next/link";
 import DesktopNavbar from "./ui/DesktopNavbar";
 import MobileNavbar from "./ui/MobileNavbar";
 import Footer from "./ui/Footer";
-import { motion } from "framer-motion";
+import CaseStudyCards2 from "./ui/CaseStudyCards2";
+// import { useState } from "react";
 
 export default function Home() {
   return (
@@ -17,103 +18,65 @@ export default function Home() {
         <h1 className={styles.title}>Alex Moore</h1>
       </div>
       <div className={styles.content}>
-        <div id="casestudies" className={styles.casestudies}>
-          <Link
-            className={styles.casestudylinkwrapper}
-            href="./loadflightcasestudy"
-          >
-            <motion.div
-              className={styles.casestudy1}
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 100, scale: 1 }}
-              transition={{ duration: 0.4, ease: "easeOut" }}
-              whileHover={{
-                scale: 1.04,
-                transition: { duration: 0.05, ease: "easeOut" },
-              }}
-            >
-              <div className={styles.casestudystub1}>
-                <p className={styles.casestudystubtext}>
-                  Refreshed UI for loading luggage on a flight ✈️
-                </p>
+        <CaseStudyCards2 />
+        {/* <div id="casestudies" className={styles.casestudies}>
+          <Link className={styles.casestudy1} href="./loadflightcasestudy">
+            <div className={styles.casestudystub1}>
+              <p className={styles.casestudystubtext}>
+                Refreshed UI for loading luggage on a flight ✈️
+              </p>
+            </div>
+            <div className={styles.casestudycontent1}>
+              <div className={styles.casestudyimage1}>
+                <Image
+                  src="/images/loadflight/loadsuccessmockup.png"
+                  layout="responsive"
+                  width={570}
+                  height={840}
+                  alt="Mockup of a hand scanner displaying a load success screen"
+                  priority={true}
+                />
               </div>
-              <div className={styles.casestudycontent1}>
-                <div className={styles.casestudyimage1}>
-                  <Image
-                    src="/images/loadflight/loadsuccessmockup.png"
-                    layout="responsive"
-                    width={570}
-                    height={840}
-                    alt="Mockup of a hand scanner displaying a load success screen"
-                    priority={true}
-                  />
-                </div>
-              </div>
-            </motion.div>
+            </div>
           </Link>
-          <Link
-            className={styles.casestudylinkwrapper}
-            href="./bagsummarycasestudy"
-          >
-            <motion.div
-              className={styles.casestudy2}
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 100, scale: 1 }}
-              transition={{ duration: 0.4, ease: "easeOut", delay: 0.1 }}
-              whileHover={{
-                scale: 1.04,
-                transition: { duration: 0.05, ease: "easeOut" },
-              }}
-            >
-              <div className={styles.casestudystub2}>
-                <p className={styles.casestudystubtext}>
-                  Telling the story of a lost bag 💼
-                </p>
+          <Link className={styles.casestudy1} href="./bagsummarycasestudy">
+            <div className={styles.casestudystub2}>
+              <p className={styles.casestudystubtext}>
+                Telling the story of a lost bag 💼
+              </p>
+            </div>
+            <div className={styles.casestudycontent2}>
+              <div className={styles.casestudyimage2}>
+                <Image
+                  src="/images/bagsummary/bagsummarymobilemockup.png"
+                  layout="responsive"
+                  width={540}
+                  height={864}
+                  alt="Mockup of a phone showing a baggage tracking screen"
+                  priority={true}
+                />
               </div>
-              <div className={styles.casestudycontent2}>
-                <div className={styles.casestudyimage2}>
-                  <Image
-                    src="/images/bagsummary/bagsummarymobilemockup.png"
-                    layout="responsive"
-                    width={540}
-                    height={864}
-                    alt="Mockup of a phone showing a baggage tracking screen"
-                    priority={true}
-                  />
-                </div>
-              </div>
-            </motion.div>
+            </div>
           </Link>
-          <Link className={styles.casestudylinkwrapper} href="./bidscasestudy">
-            <motion.div
-              className={styles.casestudy3}
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 100, scale: 1 }}
-              transition={{ duration: 0.4, ease: "easeOut", delay: 0.2 }}
-              whileHover={{
-                scale: 1.04,
-                transition: { duration: 0.05, ease: "easeOut" },
-              }}
-            >
-              <div className={styles.casestudystub3}>
-                <p className={styles.casestudystubtext}>
-                  TV displays to modernize the bag room 📺
-                </p>
+          <Link className={styles.casestudy3} href="./bidscasestudy">
+            <div className={styles.casestudystub3}>
+              <p className={styles.casestudystubtext}>
+                TV displays to modernize the bag room 📺
+              </p>
+            </div>
+            <div className={styles.casestudycontent3}>
+              <div className={styles.casestudyimage3}>
+                <Image
+                  src="/images/bids/bidsmockup.png"
+                  layout="responsive"
+                  width={728}
+                  height={512}
+                  alt="Mockup of a tv information display"
+                />
               </div>
-              <div className={styles.casestudycontent3}>
-                <div className={styles.casestudyimage3}>
-                  <Image
-                    src="/images/bids/bidsmockup.png"
-                    layout="responsive"
-                    width={728}
-                    height={512}
-                    alt="Mockup of a tv information display"
-                  />
-                </div>
-              </div>
-            </motion.div>
+            </div>
           </Link>
-        </div>
+        </div> */}
         <div id="aboutme" className={styles.aboutme}>
           <div className={styles.aboutmecontent}>
             <p className={styles.aboutmetitle}>
@@ -145,7 +108,7 @@ export default function Home() {
         </div>
         <div className={styles.skills}>
           <h2 className={styles.skillstitle}>What makes me different</h2>
-          <div className={styles.skillsrow}>
+          <div className={styles.skillscontent}>
             <div className={styles.skillssection}>
               <p className={styles.skillssectiontitle}>Domain Knowledge</p>
               <p className={styles.skillssectiontext}>
@@ -174,8 +137,6 @@ export default function Home() {
                 participation and build buy-in to the end product.
               </p>
             </div>
-          </div>
-          <div className={styles.skillsrow}>
             <div className={styles.skillssection}>
               <p className={styles.skillssectiontitle}>Technical Skillset</p>
               <p className={styles.skillssectiontext}>
