@@ -6,8 +6,7 @@ import Link from "next/link";
 import DesktopNavbar from "./ui/DesktopNavbar";
 import MobileNavbar from "./ui/MobileNavbar";
 import Footer from "./ui/Footer";
-import CaseStudyCards2 from "./ui/CaseStudyCards2";
-// import { useState } from "react";
+import CaseStudyCards from "./ui/CaseStudyCards";
 
 export default function Home() {
   return (
@@ -18,65 +17,7 @@ export default function Home() {
         <h1 className={styles.title}>Alex Moore</h1>
       </div>
       <div className={styles.content}>
-        <CaseStudyCards2 />
-        {/* <div id="casestudies" className={styles.casestudies}>
-          <Link className={styles.casestudy1} href="./loadflightcasestudy">
-            <div className={styles.casestudystub1}>
-              <p className={styles.casestudystubtext}>
-                Refreshed UI for loading luggage on a flight ✈️
-              </p>
-            </div>
-            <div className={styles.casestudycontent1}>
-              <div className={styles.casestudyimage1}>
-                <Image
-                  src="/images/loadflight/loadsuccessmockup.png"
-                  layout="responsive"
-                  width={570}
-                  height={840}
-                  alt="Mockup of a hand scanner displaying a load success screen"
-                  priority={true}
-                />
-              </div>
-            </div>
-          </Link>
-          <Link className={styles.casestudy1} href="./bagsummarycasestudy">
-            <div className={styles.casestudystub2}>
-              <p className={styles.casestudystubtext}>
-                Telling the story of a lost bag 💼
-              </p>
-            </div>
-            <div className={styles.casestudycontent2}>
-              <div className={styles.casestudyimage2}>
-                <Image
-                  src="/images/bagsummary/bagsummarymobilemockup.png"
-                  layout="responsive"
-                  width={540}
-                  height={864}
-                  alt="Mockup of a phone showing a baggage tracking screen"
-                  priority={true}
-                />
-              </div>
-            </div>
-          </Link>
-          <Link className={styles.casestudy3} href="./bidscasestudy">
-            <div className={styles.casestudystub3}>
-              <p className={styles.casestudystubtext}>
-                TV displays to modernize the bag room 📺
-              </p>
-            </div>
-            <div className={styles.casestudycontent3}>
-              <div className={styles.casestudyimage3}>
-                <Image
-                  src="/images/bids/bidsmockup.png"
-                  layout="responsive"
-                  width={728}
-                  height={512}
-                  alt="Mockup of a tv information display"
-                />
-              </div>
-            </div>
-          </Link>
-        </div> */}
+        <CaseStudyCards />
         <div id="aboutme" className={styles.aboutme}>
           <div className={styles.aboutmecontent}>
             <p className={styles.aboutmetitle}>
