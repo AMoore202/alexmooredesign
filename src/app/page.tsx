@@ -6,23 +6,10 @@ import Link from "next/link";
 import DesktopNavbar from "./ui/DesktopNavbar";
 import MobileNavbar from "./ui/MobileNavbar";
 import Footer from "./ui/Footer";
-import { useState } from "react";
+import CaseStudyCards2 from "./ui/CaseStudyCards2";
+// import { useState } from "react";
 
 export default function Home() {
-  const [imagesLoaded, setImagesLoaded] = useState({
-    image1: false,
-    image2: false,
-    image3: false,
-  });
-
-  const handleImageLoad = (imageKey: keyof typeof imagesLoaded) => {
-    setImagesLoaded((prevState) => ({
-      ...prevState,
-      [imageKey]: true,
-    }));
-    console.log("handleimageload");
-  };
-
   return (
     <main className={styles.main}>
       <DesktopNavbar />
@@ -31,14 +18,9 @@ export default function Home() {
         <h1 className={styles.title}>Alex Moore</h1>
       </div>
       <div className={styles.content}>
-        <div id="casestudies" className={styles.casestudies}>
-          {/* <Link className={styles.casestudy1} href="./loadflightcasestudy"> */}
-          <Link
-            className={`${styles.casestudy1} ${
-              imagesLoaded.image1 ? styles.visible : ""
-            }`}
-            href="./loadflightcasestudy"
-          >
+        <CaseStudyCards2 />
+        {/* <div id="casestudies" className={styles.casestudies}>
+          <Link className={styles.casestudy1} href="./loadflightcasestudy">
             <div className={styles.casestudystub1}>
               <p className={styles.casestudystubtext}>
                 Refreshed UI for loading luggage on a flight ✈️
@@ -53,17 +35,11 @@ export default function Home() {
                   height={840}
                   alt="Mockup of a hand scanner displaying a load success screen"
                   priority={true}
-                  onLoad={() => handleImageLoad("image1")}
                 />
               </div>
             </div>
           </Link>
-          <Link
-            className={`${styles.casestudy1} ${
-              imagesLoaded.image1 ? styles.visible : ""
-            }`}
-            href="./bagsummarycasestudy"
-          >
+          <Link className={styles.casestudy1} href="./bagsummarycasestudy">
             <div className={styles.casestudystub2}>
               <p className={styles.casestudystubtext}>
                 Telling the story of a lost bag 💼
@@ -78,17 +54,11 @@ export default function Home() {
                   height={864}
                   alt="Mockup of a phone showing a baggage tracking screen"
                   priority={true}
-                  onLoad={() => handleImageLoad("image2")}
                 />
               </div>
             </div>
           </Link>
-          <Link
-            className={`${styles.casestudy1} ${
-              imagesLoaded.image1 ? styles.visible : ""
-            }`}
-            href="./bidscasestudy"
-          >
+          <Link className={styles.casestudy3} href="./bidscasestudy">
             <div className={styles.casestudystub3}>
               <p className={styles.casestudystubtext}>
                 TV displays to modernize the bag room 📺
@@ -102,12 +72,11 @@ export default function Home() {
                   width={728}
                   height={512}
                   alt="Mockup of a tv information display"
-                  onLoad={() => handleImageLoad("image3")}
                 />
               </div>
             </div>
           </Link>
-        </div>
+        </div> */}
         <div id="aboutme" className={styles.aboutme}>
           <div className={styles.aboutmecontent}>
             <p className={styles.aboutmetitle}>
