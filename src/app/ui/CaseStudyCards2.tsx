@@ -30,6 +30,21 @@ export default function CaseStudyCards2() {
         priority
         onLoad={handleImageLoad}
       />
+      <Image
+        src="/images/bagsummary/bagsummarymobilemockup.png"
+        layout="responsive"
+        width={540}
+        height={864}
+        alt="Mockup of a phone showing a baggage tracking screen"
+        priority
+      />
+      <Image
+        src="/images/bids/bidsmockup.png"
+        layout="responsive"
+        width={728}
+        height={512}
+        alt="Mockup of a tv information display"
+      />
     </div>
   ) : (
     <div id="casestudies" className={styles.casestudies}>
