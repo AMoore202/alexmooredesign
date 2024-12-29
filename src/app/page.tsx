@@ -2,7 +2,6 @@
 
 import styles from "./home.module.css";
 import Image from "next/image";
-import Link from "next/link";
 import DesktopNavbar from "./ui/DesktopNavbar";
 import MobileNavbar from "./ui/MobileNavbar";
 import Footer from "./ui/Footer";
@@ -32,9 +31,8 @@ export default function Home() {
             </p>
             <p className={styles.aboutmetext}>
               I am currently working at Brock Solutions, reshaping how airlines
-              keep track of their bags. Normally, I call Canada home but I am
-              currently exploring the incredible beauty of the Scottish
-              lowlands.
+              keep track of their bags. I have recently returned back to Canada
+              after spending a wonderful year abroad, living in Scotland.
             </p>
           </div>
           <div className={styles.aboutmeimage}>
