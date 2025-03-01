@@ -6,10 +6,12 @@ import DesktopNavbar from "./ui/DesktopNavbar";
 import MobileNavbar from "./ui/MobileNavbar";
 import Footer from "./ui/Footer";
 import CaseStudyCards from "./ui/CaseStudyCards";
+import PasswordModal from "./ui/PasswordModal";
 
 export default function Home() {
   return (
     <main className={styles.main}>
+      <PasswordModal />
       <DesktopNavbar />
       <MobileNavbar />
       <div className={styles.titlebar}>
