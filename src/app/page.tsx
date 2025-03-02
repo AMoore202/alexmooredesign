@@ -1,7 +1,6 @@
 "use client";
 
 import styles from "./home.module.css";
-import { useState } from "react";
 import Image from "next/image";
 import DesktopNavbar from "./ui/DesktopNavbar";
 import MobileNavbar from "./ui/MobileNavbar";
