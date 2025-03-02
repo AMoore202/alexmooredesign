@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 // import { useRouter } from "next/router";
-import { useRouter, usePathname, useSearchParams } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 
 export default function Page() {
   const [input, setInput] = useState("");

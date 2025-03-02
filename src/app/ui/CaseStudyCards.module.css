@@ -36,6 +36,7 @@
   width: 100%;
   animation: caseStudyFadeIn 0.5s ease-in forwards;
   transition: transform 0.2s ease-out;
+  cursor: pointer;
 }
 
 .casestudy:hover {
