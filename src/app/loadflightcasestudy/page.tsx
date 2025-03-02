@@ -3,8 +3,9 @@ import loadflightstyles from "./loadflightcasestudy.module.css";
 import Image from "next/image";
 import Footer from "../ui/Footer";
 import Link from "next/link";
+import DesktopNavbar from "../ui/DesktopNavbar";
+import MobileNavbar from "../ui/MobileNavbar";
 import {
-  CaretIcon,
   DesignAuditIcon,
   DesignPrinciplesIcon,
   ExploratoryPrototypesIcon,
@@ -13,10 +14,8 @@ import {
 export default function Page() {
   return (
     <div className={styles.main}>
-      <Link className={styles.breadcrumb} href="..">
-        <CaretIcon className="" />
-        <p className={styles.breadcrumbtext}>Back Home</p>
-      </Link>
+      <DesktopNavbar />
+      <MobileNavbar />
       <div className={loadflightstyles.mockup}>
         <Image
           src="/images/loadflight/loadscandesktopsuccessmockup.png"
