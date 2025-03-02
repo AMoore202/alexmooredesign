@@ -4,14 +4,23 @@ import styles from "./CaseStudyCards.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import PasswordModal from "./PasswordModal";
 
 export default function CaseStudyCards() {
   const [caseStudyImage1Loaded, setCaseStudyImage1Loaded] = useState(false);
+  const [showPasswordModal, setShowPasswordModal] = useState(false);
+  const [selectedCaseStudy, setSelectedCaseStudy] = useState("");
 
   const handleImageLoad = () => {
     setCaseStudyImage1Loaded(true);
     console.log("Image Loaded");
   };
+
+  const openModal = (page: string) => {
+    setSelectedCaseStudy(page);
+    setShowPasswordModal(true);
+  };
+  const closeModal = () => setShowPasswordModal(false);
 
   const caseStudyContent = !caseStudyImage1Loaded ? (
     <div className={styles.casestudyplaceholder}>
@@ -42,9 +51,14 @@ export default function CaseStudyCards() {
     </div>
   ) : (
     <div id="casestudies" className={styles.casestudies}>
-      <Link
+      <PasswordModal
+        isOpen={showPasswordModal}
+        onClose={closeModal}
+        page={selectedCaseStudy}
+      />
+      <div
         className={`${styles.casestudy} ${styles.casestudyloadflight}`}
-        href="./loadflightcasestudy"
+        onClick={() => openModal("loadflightcasestudy")}
       >
         <div
           className={`${styles.casestudystub} ${styles.casestudystubloadflight}`}
@@ -70,10 +84,10 @@ export default function CaseStudyCards() {
             />
           </div>
         </div>
-      </Link>
-      <Link
+      </div>
+      <div
         className={`${styles.casestudy} ${styles.casestudybagsummary}`}
-        href="./bagsummarycasestudy"
+        onClick={() => openModal("bagsummarycasestudy")}
       >
         <div
           className={`${styles.casestudystub} ${styles.casestudystubbagsummary}`}
@@ -98,10 +112,10 @@ export default function CaseStudyCards() {
             />
           </div>
         </div>
-      </Link>
-      <Link
+      </div>
+      <div
         className={`${styles.casestudy} ${styles.casestudybids}`}
-        href="./bidscasestudy"
+        onClick={() => openModal("bidscasestudy")}
       >
         <div className={`${styles.casestudystub} ${styles.casestudystubbids}`}>
           <p className={styles.casestudystubtext}>
@@ -123,7 +137,7 @@ export default function CaseStudyCards() {
             />
           </div>
         </div>
-      </Link>
+      </div>
     </div>
   );
 
