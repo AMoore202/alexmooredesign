@@ -5,11 +5,6 @@ import Footer from "../ui/Footer";
 import Link from "next/link";
 import DesktopNavbar from "../ui/DesktopNavbar";
 import MobileNavbar from "../ui/MobileNavbar";
-import {
-  DesignAuditIcon,
-  DesignPrinciplesIcon,
-  ExploratoryPrototypesIcon,
-} from "../ui/Icons";
 
 export default function Page() {
   return (
@@ -17,28 +12,16 @@ export default function Page() {
       <DesktopNavbar />
       <MobileNavbar />
       <div className={loadflightstyles.mockup}>
+        <p className={styles.mockuptext}>
+          Refreshed UI for loading luggage on a flight ✈️
+        </p>
         <Image
           src="/images/loadflight/loadscandesktopsuccessmockup.png"
           className={styles.mockupimagedesktop}
-          width={398}
-          height={624}
+          style={{ marginTop: "22rem" }}
+          width={597} // 398 796 597
+          height={936} // 624 1248 936
           alt="Mockup of a hand scanner showing a success screen"
-          priority={true}
-        />
-        <Image
-          src="/images/loadflight/loadscandesktopalertmockup.png"
-          className={styles.mockupimagedesktop}
-          width={398}
-          height={624}
-          alt="Mockup of a hand scanner showing an alert screen"
-          priority={true}
-        />
-        <Image
-          src="/images/loadflight/loadscandesktopexceptionmockup.png"
-          className={styles.mockupimagedesktop}
-          width={398}
-          height={624}
-          alt="Mockup of a hand scanner showing an exception screen"
           priority={true}
         />
         <Image
@@ -88,26 +71,6 @@ export default function Page() {
         </div>
         <div className={styles.section}>
           <h2 className={styles.sectiontitle}>The Process</h2>
-          <div className={styles.processvisual}>
-            <div className={styles.processvisualstep}>
-              <DesignAuditIcon className={styles.processvisualstepicon} />
-              <p className={styles.processvisualsteptext}>Design Audit</p>
-            </div>
-            <div className={styles.processvisualstep}>
-              <DesignPrinciplesIcon className={styles.processvisualstepicon} />
-              <p className={styles.processvisualsteptext}>
-                Design Principles and Approaches
-              </p>
-            </div>
-            <div className={styles.processvisualstep}>
-              <ExploratoryPrototypesIcon
-                className={styles.processvisualstepicon}
-              />
-              <p className={styles.processvisualsteptext}>
-                Exploratory Prototypes
-              </p>
-            </div>
-          </div>
           <div className={styles.processsteps}>
             <div className={styles.processstep}>
               <div className={styles.processsteptitle}>

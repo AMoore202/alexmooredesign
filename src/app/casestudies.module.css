@@ -14,29 +14,21 @@
     display: none;
 }
 
+.mockuptext {
+    color: var(--Neutral-900, #3D3D3D);
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 130%;
+    letter-spacing: -0.05rem;
+    width: 24rem;
+  }
+
 .content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 5rem;
     max-width: 74rem;
-}
-
-.breadcrumb {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    position: fixed;
-    left: 3.5rem;
-    top: 1.5rem;
-}
-
-.breadcrumbtext {
-    color: var(--Neutral-700, #4F4F4F);
-    font-size: 1.5rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: -0.03rem;
 }
 
 .overview {
@@ -50,7 +42,7 @@
     align-self: stretch;
     color: var(--Neutral-700, #4F4F4F);
     font-size: 4rem;
-    font-weight: 200;
+    font-weight: 300;
     line-height: 140%;
 }
 
@@ -110,7 +102,7 @@
 .section {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 1rem;
     align-items: center;
 }
 
@@ -119,35 +111,6 @@
     color: var(--Neutral-700, #4F4F4F);
     font-size: 4rem;
     font-weight: 200;
-    line-height: 140%;
-}
-
-.processvisual {
-    display: flex;
-    align-items: flex-start;
-    gap: 4rem;
-}
-
-.processvisualstep {
-    display: flex;
-    width: 18rem;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.processvisualstepicon {
-    width: 10rem;
-    height: 7rem;
-    fill: var(--Neutral-900, #3D3D3D);
-}
-
-.processvisualsteptext {
-    align-self: stretch;
-    color: var(--Neutral-800, #454545);
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 300;
     line-height: 140%;
 }
 
@@ -231,25 +194,16 @@
     
     .mockupimagemobile {
         display: flex;
-    }    
+    }
+
+    .mockuptext {
+        display: none;
+    }
 
     .content {
         padding: 0rem 1.5rem;
         gap: 2.5rem;
         max-width: 24rem;
-    }
-
-    .breadcrumb {
-        left: 0.4rem;
-        top: 0.6875rem;
-    }
-
-    .breadcrumbtext {
-        display: none;
-    }
-
-    .section {
-        align-self: stretch;
     }
 
     .overview {
@@ -287,7 +241,8 @@
     }
 
     .section {
-        gap: 1.5rem;
+        gap: 0.5rem;
+        align-self: stretch;
     }
 
     .sectiontitle {

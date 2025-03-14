@@ -6,11 +6,6 @@ import Link from "next/link";
 import Footer from "../ui/Footer";
 import DesktopNavbar from "../ui/DesktopNavbar";
 import MobileNavbar from "../ui/MobileNavbar";
-import {
-  UserVideoIcon,
-  DesignCritiqueIcon,
-  IterativeDevIcon,
-} from "../ui/Icons";
 
 export default function Page() {
   return (
@@ -18,14 +13,9 @@ export default function Page() {
       <DesktopNavbar />
       <MobileNavbar />
       <div className={bagsummarystyles.mockup}>
-        <Image
-          src="/images/bagsummary/bagsummarymobilemockup.png"
-          className={styles.mockupimagedesktop}
-          width={391}
-          height={626}
-          alt="Mockup of a phone displaying the timeline of a lost bag"
-          priority={true}
-        />
+        <p className={styles.mockuptext} style={{ width: "23rem" }}>
+          Telling the story of a lost bag 💼
+        </p>
         <Image
           src="/images/bagsummary/bagsummarydesktopmockup.png"
           className={styles.mockupimagedesktop}
@@ -76,24 +66,6 @@ export default function Page() {
         </div>
         <div className={styles.section}>
           <h2 className={styles.sectiontitle}>The Process</h2>
-          <div className={styles.processvisual}>
-            <div className={styles.processvisualstep}>
-              <UserVideoIcon className={styles.processvisualstepicon} />
-              <p className={styles.processvisualsteptext}>
-                Understanding the User
-              </p>
-            </div>
-            <div className={styles.processvisualstep}>
-              <DesignCritiqueIcon className={styles.processvisualstepicon} />
-              <p className={styles.processvisualsteptext}>Design Critiques</p>
-            </div>
-            <div className={styles.processvisualstep}>
-              <IterativeDevIcon className={styles.processvisualstepicon} />
-              <p className={styles.processvisualsteptext}>
-                Defining, Building, and Iterating
-              </p>
-            </div>
-          </div>
           <div className={styles.processsteps}>
             <div className={styles.processstep}>
               <div className={styles.processsteptitle}>
