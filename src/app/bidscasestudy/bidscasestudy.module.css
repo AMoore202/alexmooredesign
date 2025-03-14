@@ -6,7 +6,7 @@
     align-items: center;
     background: var(--Accent-Thistle, #DFC7E0);
     gap: 2rem;
-    box-shadow: 0px 4px 16px 0px rgba(150, 99, 150, 0.16), 0px 0px 8px 0px rgba(150, 99, 150, 0.15);
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.10), 0px 0px 8px 0px rgba(0, 0, 0, 0.10);
 }
 
 .processstepimagecontainer1,
