@@ -3,8 +3,9 @@ import type { NextRequest } from "next/server";
 
 export function middleware(req: NextRequest) {
   const url = new URL(req.url);
-  const password = "ComplexSystemsUX";
-    if (req.url === "/") {
+  const password = process.env.NEXT_PUBLIC_CASE_STUDY_PASSWORD;
+
+  if (req.url === "/") {
     return NextResponse.next();
   }
 

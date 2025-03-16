@@ -22,7 +22,7 @@ export default function PasswordModal({
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (input === "ComplexSystemsUX") {
+    if (input === process.env.NEXT_PUBLIC_CASE_STUDY_PASSWORD) {
       document.cookie = `caseStudyAccess=${input}; path=/`;
       router.push(`/${page}`);
     } else {
