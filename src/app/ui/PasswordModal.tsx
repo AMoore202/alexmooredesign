@@ -24,7 +24,7 @@ export default function PasswordModal({
     e.preventDefault();
     if (input === process.env.NEXT_PUBLIC_CASE_STUDY_PASSWORD) {
       document.cookie = `caseStudyAccess=${input}; path=/`;
-      router.push(`/${page}`);
+      router.push(`/casestudy/${page}`);
     } else {
       alert("Incorrect password");
     }

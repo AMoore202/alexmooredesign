@@ -23,7 +23,7 @@ export default function MobileNavbar() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 100 }}
     >
-      <Link className={styles.navitem} href="./" onClick={closeMenu}>
+      <Link className={styles.navitem} href="/" onClick={closeMenu}>
         Home
       </Link>
       <Link

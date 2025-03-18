@@ -1,10 +1,10 @@
-import styles from "../casestudies.module.css";
+import styles from "../../casestudies.module.css";
 import loadflightstyles from "./loadflightcasestudy.module.css";
 import Image from "next/image";
-import Footer from "../ui/Footer";
+import Footer from "../../ui/Footer";
 import Link from "next/link";
-import DesktopNavbar from "../ui/DesktopNavbar";
-import MobileNavbar from "../ui/MobileNavbar";
+import DesktopNavbar from "../../ui/DesktopNavbar";
+import MobileNavbar from "../../ui/MobileNavbar";
 
 export default function Page() {
   return (
