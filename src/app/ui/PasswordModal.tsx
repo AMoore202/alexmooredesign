@@ -91,34 +91,14 @@ import Link from "next/link";
 import { useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 
-// interface PasswordModalProps {
-//   onSuccess: () => void;
-// }
-
 export default function PasswordModal() {
   const [input, setInput] = useState("");
   const [error, setError] = useState("");
   const router = useRouter();
   const searchParams = useSearchParams();
-  // const password = process.env.CASE_STUDY_PASSWORD;
-  // console.log("Search Params Redirect Log:", searchParams.get("redirect"));
 
   const redirectUrl =
     searchParams.get("redirect") || "/casestudy/loadflightcasestudy";
-
-  // const handleSubmit = (e: React.FormEvent) => {
-  //   e.preventDefault();
-  //   if (input === password) {
-  //     document.cookie = `caseStudyAccess=${input}; path=/`;
-  //     console.log("Redirecting to: ", redirectUrl);
-  //     router.refresh();
-  //     setTimeout(() => {
-  //       router.replace(redirectUrl);
-  //     }, 500);
-  //   } else {
-  //     alert("Incorrect password");
-  //   }
-  // };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
