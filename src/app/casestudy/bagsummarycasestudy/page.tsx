@@ -1,11 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
-import styles from "../casestudies.module.css";
+import styles from "../../casestudies.module.css";
 import bagsummarystyles from "./bagsummarycasestudy.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import Footer from "../ui/Footer";
-import DesktopNavbar from "../ui/DesktopNavbar";
-import MobileNavbar from "../ui/MobileNavbar";
+import Footer from "../../ui/Footer";
+import DesktopNavbar from "../../ui/DesktopNavbar";
+import MobileNavbar from "../../ui/MobileNavbar";
 
 export default function Page() {
   return (

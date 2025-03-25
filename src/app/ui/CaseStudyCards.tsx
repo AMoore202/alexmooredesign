@@ -3,7 +3,8 @@
 import styles from "./CaseStudyCards.module.css";
 import Image from "next/image";
 import { useState } from "react";
-import PasswordModal from "./PasswordModal";
+import Link from "next/link";
+// import PasswordModal from "./PasswordModal";
 
 export default function CaseStudyCards() {
   const [caseStudyImage1Loaded, setCaseStudyImage1Loaded] = useState(false);
@@ -12,7 +13,7 @@ export default function CaseStudyCards() {
 
   const handleImageLoad = () => {
     setCaseStudyImage1Loaded(true);
-    console.log("Image Loaded");
+    // console.log("Image Loaded");
   };
 
   const openModal = (page: string) => {
@@ -50,14 +51,14 @@ export default function CaseStudyCards() {
     </div>
   ) : (
     <div id="casestudies" className={styles.casestudies}>
-      <PasswordModal
+      {/* <PasswordModal
         isOpen={showPasswordModal}
         onClose={closeModal}
         page={selectedCaseStudy}
-      />
-      <div
+      /> */}
+      <Link
         className={`${styles.casestudy} ${styles.casestudyloadflight}`}
-        onClick={() => openModal("loadflightcasestudy")}
+        href="/casestudy/loadflightcasestudy"
       >
         <div
           className={`${styles.casestudystub} ${styles.casestudystubloadflight}`}
@@ -83,10 +84,10 @@ export default function CaseStudyCards() {
             />
           </div>
         </div>
-      </div>
-      <div
+      </Link>
+      <Link
         className={`${styles.casestudy} ${styles.casestudybagsummary}`}
-        onClick={() => openModal("bagsummarycasestudy")}
+        href={"/casestudy/bagsummarycasestudy"}
       >
         <div
           className={`${styles.casestudystub} ${styles.casestudystubbagsummary}`}
@@ -111,10 +112,10 @@ export default function CaseStudyCards() {
             />
           </div>
         </div>
-      </div>
-      <div
+      </Link>
+      <Link
         className={`${styles.casestudy} ${styles.casestudybids}`}
-        onClick={() => openModal("bidscasestudy")}
+        href="/casestudy/bidscasestudy"
       >
         <div className={`${styles.casestudystub} ${styles.casestudystubbids}`}>
           <p className={styles.casestudystubtext}>
@@ -136,7 +137,7 @@ export default function CaseStudyCards() {
             />
           </div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 
