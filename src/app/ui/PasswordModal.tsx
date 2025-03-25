@@ -114,7 +114,7 @@ export default function PasswordModal() {
       setTimeout(() => {
         router.replace(redirectUrl);
       }, 500);
-      console.log("Redirecting to: ", redirectUrl);
+      // console.log("Redirecting to: ", redirectUrl);
     } else {
       setError("Incorrect password");
     }
