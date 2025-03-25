@@ -47,16 +47,18 @@ export default function Page() {
               Shoot me an email!
             </Link>
           </p>
-          {error && <p className={styles.error}>{error}</p>}
         </div>
         <form onSubmit={handleSubmit} className={styles.form}>
-          <input
-            className={styles.input}
-            type="password"
-            placeholder="Password"
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-          />
+          <div className={styles.inputwrapper}>
+            <input
+              className={`${styles.input} ${error ? styles.inputError : ""}`}
+              type="password"
+              placeholder="Password"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+            />
+            {error && <p className={styles.error}>{error}</p>}
+          </div>
           <button type="submit" className={styles.button}>
             Submit
           </button>
