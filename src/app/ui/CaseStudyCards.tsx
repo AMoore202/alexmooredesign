@@ -12,7 +12,6 @@ export default function CaseStudyCards() {
   const router = useRouter();
   const [showPasswordModal, setShowPasswordModal] = useState(false);
   const [selectedCaseStudy, setSelectedCaseStudy] = useState("");
-  const [isMounted, setIsMounted] = useState(false);
 
   const handleImageLoad = () => {
     setCaseStudyImage1Loaded(true);
@@ -106,9 +105,9 @@ export default function CaseStudyCards() {
           </div>
         </div>
       </div>
-      <Link
+      <div
         className={`${styles.casestudy} ${styles.casestudybagsummary}`}
-        href={"/casestudy/bagsummarycasestudy"}
+        onClick={() => handleClick("bagsummarycasestudy")}
       >
         <div
           className={`${styles.casestudystub} ${styles.casestudystubbagsummary}`}
@@ -133,10 +132,10 @@ export default function CaseStudyCards() {
             />
           </div>
         </div>
-      </Link>
-      <Link
+      </div>
+      <div
         className={`${styles.casestudy} ${styles.casestudybids}`}
-        href="/casestudy/bidscasestudy"
+        onClick={() => handleClick("bidscasestudy")}
       >
         <div className={`${styles.casestudystub} ${styles.casestudystubbids}`}>
           <p className={styles.casestudystubtext}>
@@ -158,7 +157,7 @@ export default function CaseStudyCards() {
             />
           </div>
         </div>
-      </Link>
+      </div>
     </div>
   );
 

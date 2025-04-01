@@ -18,15 +18,23 @@ export default function PasswordModal({
   page,
 }: PasswordModalProps) {
   const [input, setInput] = useState("");
+  const [error, setError] = useState("");
   const router = useRouter();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (input === process.env.NEXT_PUBLIC_CASE_STUDY_PASSWORD) {
-      document.cookie = `caseStudyAccess=${input}; path=/`;
-      router.push(`/casestudy/${page}`);
+
+    const res = await fetch("/api/validate-password", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ password: input }),
+    });
+
+    if (res.ok) {
+      router.refresh();
+      router.replace(`/casestudy/${page}`);
     } else {
-      alert("Incorrect password");
+      setError("Incorrect password");
     }
   };
 
@@ -68,13 +76,16 @@ export default function PasswordModal({
           </p>
         </div>
         <form onSubmit={handleSubmit} className={styles.form}>
-          <input
-            className={styles.input}
-            type="password"
-            placeholder="Password"
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-          />
+          <div className={styles.inputwrapper}>
+            <input
+              className={`${styles.input} ${error ? styles.inputError : ""}`}
+              type="password"
+              placeholder="Password"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+            />
+            {error && <p className={styles.error}>{error}</p>}
+          </div>
           <button type="submit" className={styles.button}>
             Submit
           </button>
