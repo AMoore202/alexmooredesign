@@ -3,15 +3,14 @@
 import styles from "./CaseStudyCards.module.css";
 import Image from "next/image";
 import { useState } from "react";
-import Link from "next/link";
 import PasswordModal from "./PasswordModal";
 import { useRouter } from "next/navigation";
 
 export default function CaseStudyCards() {
   const [caseStudyImage1Loaded, setCaseStudyImage1Loaded] = useState(false);
-  const router = useRouter();
   const [showPasswordModal, setShowPasswordModal] = useState(false);
   const [selectedCaseStudy, setSelectedCaseStudy] = useState("");
+  const router = useRouter();
 
   const handleImageLoad = () => {
     setCaseStudyImage1Loaded(true);
