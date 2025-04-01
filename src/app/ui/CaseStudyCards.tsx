@@ -3,23 +3,42 @@
 import styles from "./CaseStudyCards.module.css";
 import Image from "next/image";
 import { useState } from "react";
-import Link from "next/link";
-// import PasswordModal from "./PasswordModal";
+import PasswordModal from "./PasswordModal";
+import { useRouter } from "next/navigation";
 
 export default function CaseStudyCards() {
   const [caseStudyImage1Loaded, setCaseStudyImage1Loaded] = useState(false);
   const [showPasswordModal, setShowPasswordModal] = useState(false);
   const [selectedCaseStudy, setSelectedCaseStudy] = useState("");
+  const router = useRouter();
 
   const handleImageLoad = () => {
     setCaseStudyImage1Loaded(true);
     // console.log("Image Loaded");
   };
 
-  const openModal = (page: string) => {
-    setSelectedCaseStudy(page);
-    setShowPasswordModal(true);
+  const handleClick = async (caseStudySlug: string) => {
+    console.log("Modal opened");
+
+    try {
+      const res = await fetch("/api/check-auth", {
+        credentials: "include",
+      });
+      const data = await res.json();
+
+      console.log("Response data:", data);
+
+      if (data.authenticated) {
+        router.push(`/casestudy/${caseStudySlug}`);
+      } else {
+        setSelectedCaseStudy(caseStudySlug);
+        setShowPasswordModal(true);
+      }
+    } catch (error) {
+      console.error("Error checking authentication:", error);
+    }
   };
+
   const closeModal = () => setShowPasswordModal(false);
 
   const caseStudyContent = !caseStudyImage1Loaded ? (
@@ -51,14 +70,14 @@ export default function CaseStudyCards() {
     </div>
   ) : (
     <div id="casestudies" className={styles.casestudies}>
-      {/* <PasswordModal
+      <PasswordModal
         isOpen={showPasswordModal}
         onClose={closeModal}
         page={selectedCaseStudy}
-      /> */}
-      <Link
+      />
+      <div
         className={`${styles.casestudy} ${styles.casestudyloadflight}`}
-        href="/casestudy/loadflightcasestudy"
+        onClick={() => handleClick("loadflightcasestudy")}
       >
         <div
           className={`${styles.casestudystub} ${styles.casestudystubloadflight}`}
@@ -84,10 +103,10 @@ export default function CaseStudyCards() {
             />
           </div>
         </div>
-      </Link>
-      <Link
+      </div>
+      <div
         className={`${styles.casestudy} ${styles.casestudybagsummary}`}
-        href={"/casestudy/bagsummarycasestudy"}
+        onClick={() => handleClick("bagsummarycasestudy")}
       >
         <div
           className={`${styles.casestudystub} ${styles.casestudystubbagsummary}`}
@@ -112,10 +131,10 @@ export default function CaseStudyCards() {
             />
           </div>
         </div>
-      </Link>
-      <Link
+      </div>
+      <div
         className={`${styles.casestudy} ${styles.casestudybids}`}
-        href="/casestudy/bidscasestudy"
+        onClick={() => handleClick("bidscasestudy")}
       >
         <div className={`${styles.casestudystub} ${styles.casestudystubbids}`}>
           <p className={styles.casestudystubtext}>
@@ -137,7 +156,7 @@ export default function CaseStudyCards() {
             />
           </div>
         </div>
-      </Link>
+      </div>
     </div>
   );
 
