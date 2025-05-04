@@ -44,7 +44,7 @@ export default function CaseStudyCards() {
   const caseStudyContent = !caseStudyImage1Loaded ? (
     <div className={styles.casestudyplaceholder}>
       <Image
-        src="/images/loadflight/loadsuccessmockup.png"
+        src="/images/loadflight/loadsuccessmockup.webp"
         layout="responsive"
         width={570}
         height={840}
@@ -93,7 +93,7 @@ export default function CaseStudyCards() {
             className={`${styles.casestudyimage} ${styles.casestudyimageloadflight}`}
           >
             <Image
-              src="/images/loadflight/loadsuccessmockup.png"
+              src="/images/loadflight/loadsuccessmockup.webp"
               layout="responsive"
               width={570}
               height={840}
