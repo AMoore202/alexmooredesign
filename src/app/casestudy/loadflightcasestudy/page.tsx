@@ -16,19 +16,19 @@ export default function Page() {
           Refreshed UI for loading luggage on a flight ✈️
         </p>
         <Image
-          src="/images/loadflight/loadscandesktopsuccessmockup.png"
+          src="/images/loadflight/loadsuccessmockup.webp"
           className={styles.mockupimagedesktop}
           style={{ marginTop: "22rem" }}
-          width={597} // 398 796 597
-          height={936} // 624 1248 936
+          width={570} // 398 796 597
+          height={840} // 624 1248 936
           alt="Mockup of a hand scanner showing a success screen"
           priority={true}
         />
         <Image
-          src="/images/loadflight/loadsuccessmockup.png"
+          src="/images/loadflight/loadsuccessmockup.webp"
           className={styles.mockupimagemobile}
-          width={271}
-          height={398}
+          width={271} // 271
+          height={398} // 398
           alt="Mockup of a hand scanner showing a success screen"
           priority={true}
         />
