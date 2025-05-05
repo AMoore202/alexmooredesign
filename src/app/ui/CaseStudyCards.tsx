@@ -53,7 +53,7 @@ export default function CaseStudyCards() {
         onLoad={handleImageLoad}
       />
       <Image
-        src="/images/bagsummary/bagsummarymobilemockup.png"
+        src="/images/bagsummary/bagsummarymobilemockup.webp"
         layout="responsive"
         width={540}
         height={864}
@@ -122,7 +122,7 @@ export default function CaseStudyCards() {
             className={`${styles.casestudyimage} ${styles.casestudyimagebagsummary}`}
           >
             <Image
-              src="/images/bagsummary/bagsummarymobilemockup.png"
+              src="/images/bagsummary/bagsummarymobilemockup.webp"
               layout="responsive"
               width={540}
               height={864}

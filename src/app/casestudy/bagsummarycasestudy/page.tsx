@@ -17,15 +17,16 @@ export default function Page() {
           Telling the story of a lost bag 💼
         </p>
         <Image
-          src="/images/bagsummary/bagsummarydesktopmockup.png"
+          src="/images/bagsummary/bagsummarymobilemockup.webp"
           className={styles.mockupimagedesktop}
-          width={1039}
-          height={639}
-          alt="Mockup of a desktop displaying the timeline of a lost bag"
-          priority={true}
+          style={{ marginTop: "26rem" }}
+          width={648} // 540
+          height={1037} // 864
+          alt="Mockup of a phone showing a baggage tracking screen"
+          priority
         />
         <Image
-          src="/images/bagsummary/bagsummarymobilemockup.png"
+          src="/images/bagsummary/bagsummarymobilemockup.webp"
           className={styles.mockupimagemobile}
           width={333}
           height={533}
