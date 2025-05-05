@@ -44,7 +44,7 @@ export default function CaseStudyCards() {
   const caseStudyContent = !caseStudyImage1Loaded ? (
     <div className={styles.casestudyplaceholder}>
       <Image
-        src="/images/loadflight/loadsuccessmockup.png"
+        src="/images/loadflight/loadsuccessmockup.webp"
         layout="responsive"
         width={570}
         height={840}
@@ -53,7 +53,7 @@ export default function CaseStudyCards() {
         onLoad={handleImageLoad}
       />
       <Image
-        src="/images/bagsummary/bagsummarymobilemockup.png"
+        src="/images/bagsummary/bagsummarymobilemockup.webp"
         layout="responsive"
         width={540}
         height={864}
@@ -61,7 +61,7 @@ export default function CaseStudyCards() {
         priority
       />
       <Image
-        src="/images/bids/bidsmockup.png"
+        src="/images/bids/bidsmockup.webp"
         layout="responsive"
         width={728}
         height={512}
@@ -93,7 +93,7 @@ export default function CaseStudyCards() {
             className={`${styles.casestudyimage} ${styles.casestudyimageloadflight}`}
           >
             <Image
-              src="/images/loadflight/loadsuccessmockup.png"
+              src="/images/loadflight/loadsuccessmockup.webp"
               layout="responsive"
               width={570}
               height={840}
@@ -122,7 +122,7 @@ export default function CaseStudyCards() {
             className={`${styles.casestudyimage} ${styles.casestudyimagebagsummary}`}
           >
             <Image
-              src="/images/bagsummary/bagsummarymobilemockup.png"
+              src="/images/bagsummary/bagsummarymobilemockup.webp"
               layout="responsive"
               width={540}
               height={864}
@@ -148,7 +148,7 @@ export default function CaseStudyCards() {
             className={`${styles.casestudyimage} ${styles.casestudyimagebids}`}
           >
             <Image
-              src="/images/bids/bidsmockup.png"
+              src="/images/bids/bidsmockup.webp"
               layout="responsive"
               width={728}
               height={512}
