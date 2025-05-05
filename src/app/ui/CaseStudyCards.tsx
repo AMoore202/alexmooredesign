@@ -61,7 +61,7 @@ export default function CaseStudyCards() {
         priority
       />
       <Image
-        src="/images/bids/bidsmockup.png"
+        src="/images/bids/bidsmockup.webp"
         layout="responsive"
         width={728}
         height={512}
@@ -148,7 +148,7 @@ export default function CaseStudyCards() {
             className={`${styles.casestudyimage} ${styles.casestudyimagebids}`}
           >
             <Image
-              src="/images/bids/bidsmockup.png"
+              src="/images/bids/bidsmockup.webp"
               layout="responsive"
               width={728}
               height={512}

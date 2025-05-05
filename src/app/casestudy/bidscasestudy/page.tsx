@@ -16,7 +16,7 @@ export default function Page() {
           TV displays to modernize the bag room 📺
         </p>
         <Image
-          src="/images/bids/bidsmockup.png"
+          src="/images/bids/bidsmockup.webp"
           className={styles.mockupimagedesktop}
           width={850} // 738 945 850
           height={576} // 500 640 576
@@ -24,7 +24,7 @@ export default function Page() {
           priority={true}
         />
         <Image
-          src="/images/bids/bidsmockup.png"
+          src="/images/bids/bidsmockup2.webp"
           className={styles.mockupimagemobile}
           width={300}
           height={203}
