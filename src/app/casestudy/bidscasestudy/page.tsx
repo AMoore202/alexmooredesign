@@ -24,7 +24,7 @@ export default function Page() {
           priority={true}
         />
         <Image
-          src="/images/bids/bidsmockup2.webp"
+          src="/images/bids/bidsmockup.webp"
           className={styles.mockupimagemobile}
           width={300}
           height={203}
