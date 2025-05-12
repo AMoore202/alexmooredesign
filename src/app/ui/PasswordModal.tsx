@@ -44,7 +44,7 @@ export default function PasswordModal({
     const isValid = await checkPassword(input);
 
     if (isValid) {
-      localStorage.setItem("caseStudyAccess", "true");
+      localStorage.setItem("c917c5c643654e79a8dfbb6788b7866f", "true");
       router.replace(`/casestudy/${page}`);
     } else {
       setError("Incorrect password");

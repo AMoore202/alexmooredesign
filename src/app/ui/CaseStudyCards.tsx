@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useState } from "react";
 import PasswordModal from "./PasswordModal";
 import { useRouter } from "next/navigation";
+import { isAuthenticated } from "../lib/auth";
 
 export default function CaseStudyCards() {
   const [caseStudyImage1Loaded, setCaseStudyImage1Loaded] = useState(false);
@@ -17,25 +18,36 @@ export default function CaseStudyCards() {
     // console.log("Image Loaded");
   };
 
-  const handleClick = async (caseStudySlug: string) => {
+  // const handleClick = async (caseStudySlug: string) => {
+  //   console.log("Modal opened");
+
+  //   try {
+  //     const res = await fetch("/api/check-auth", {
+  //       credentials: "include",
+  //     });
+  //     const data = await res.json();
+
+  //     console.log("Response data:", data);
+
+  //     if (data.authenticated) {
+  //       router.push(`/casestudy/${caseStudySlug}`);
+  //     } else {
+  //       setSelectedCaseStudy(caseStudySlug);
+  //       setShowPasswordModal(true);
+  //     }
+  //   } catch (error) {
+  //     console.error("Error checking authentication:", error);
+  //   }
+  // };
+
+  const handleClick = (caseStudySlug: string) => {
     console.log("Modal opened");
 
-    try {
-      const res = await fetch("/api/check-auth", {
-        credentials: "include",
-      });
-      const data = await res.json();
-
-      console.log("Response data:", data);
-
-      if (data.authenticated) {
-        router.push(`/casestudy/${caseStudySlug}`);
-      } else {
-        setSelectedCaseStudy(caseStudySlug);
-        setShowPasswordModal(true);
-      }
-    } catch (error) {
-      console.error("Error checking authentication:", error);
+    if (isAuthenticated()) {
+      router.push(`/casestudy/${caseStudySlug}`);
+    } else {
+      setSelectedCaseStudy(caseStudySlug);
+      setShowPasswordModal(true);
     }
   };
 
