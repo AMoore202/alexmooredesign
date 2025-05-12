@@ -18,28 +18,6 @@ export default function CaseStudyCards() {
     // console.log("Image Loaded");
   };
 
-  // const handleClick = async (caseStudySlug: string) => {
-  //   console.log("Modal opened");
-
-  //   try {
-  //     const res = await fetch("/api/check-auth", {
-  //       credentials: "include",
-  //     });
-  //     const data = await res.json();
-
-  //     console.log("Response data:", data);
-
-  //     if (data.authenticated) {
-  //       router.push(`/casestudy/${caseStudySlug}`);
-  //     } else {
-  //       setSelectedCaseStudy(caseStudySlug);
-  //       setShowPasswordModal(true);
-  //     }
-  //   } catch (error) {
-  //     console.error("Error checking authentication:", error);
-  //   }
-  // };
-
   const handleClick = (caseStudySlug: string) => {
     console.log("Modal opened");
 

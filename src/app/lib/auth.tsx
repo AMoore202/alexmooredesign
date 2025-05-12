@@ -16,7 +16,5 @@ export async function checkPassword(password: string): Promise<boolean> {
 }
 
 export function isAuthenticated(): boolean {
-  console.log("Checking authentication");
-  console.log("Authenticated:", localStorage.getItem("authenticated"));
   return localStorage.getItem("c917c5c643654e79a8dfbb6788b7866f") === "true";
 }

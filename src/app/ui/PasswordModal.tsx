@@ -3,7 +3,7 @@
 import styles from "./PasswordModal.module.css";
 import Link from "next/link";
 import { useState } from "react";
-import { useRouter, usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import { checkPassword } from "@/app/lib/auth";
 
@@ -21,23 +21,6 @@ export default function PasswordModal({
   const [input, setInput] = useState("");
   const [error, setError] = useState("");
   const router = useRouter();
-
-  // const handleSubmit = async (e: React.FormEvent) => {
-  //   e.preventDefault();
-
-  //   const res = await fetch("/api/validate-password", {
-  //     method: "POST",
-  //     headers: { "Content-Type": "application/json" },
-  //     body: JSON.stringify({ password: input }),
-  //   });
-
-  //   if (res.ok) {
-  //     router.refresh();
-  //     router.replace(`/casestudy/${page}`);
-  //   } else {
-  //     setError("Incorrect password");
-  //   }
-  // };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
