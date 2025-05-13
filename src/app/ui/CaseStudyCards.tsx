@@ -21,12 +21,14 @@ export default function CaseStudyCards() {
   const handleClick = (caseStudySlug: string) => {
     console.log("Modal opened");
 
-    if (isAuthenticated()) {
-      router.push(`/casestudy/${caseStudySlug}`);
-    } else {
-      setSelectedCaseStudy(caseStudySlug);
-      setShowPasswordModal(true);
-    }
+    isAuthenticated().then((authenticated) => {
+      if (authenticated) {
+        router.push(`/casestudy/${caseStudySlug}`);
+      } else {
+        setSelectedCaseStudy(caseStudySlug);
+        setShowPasswordModal(true);
+      }
+    });
   };
 
   const closeModal = () => setShowPasswordModal(false);
