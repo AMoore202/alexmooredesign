@@ -15,7 +15,8 @@ export async function checkPassword(password: string): Promise<boolean> {
   return hashedPassword === VALID_HASH;
 }
 
-export async function isAuthenticated(password: string): Promise<boolean> {
+export async function isAuthenticated(): Promise<boolean> {
+  const password = localStorage.getItem("password") || "";
   const hashedPassword = await hashPassword(password);
-  return localStorage.getItem("password") === hashedPassword;
+  return hashedPassword === VALID_HASH;
 }
