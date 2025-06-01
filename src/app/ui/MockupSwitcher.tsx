@@ -37,7 +37,6 @@ export default function MockupSwitcher({ mockups }: Props) {
           src={selectedMockup.image}
           fill
           alt={selectedMockup.alt}
-          priority
           style={{ objectFit: "cover" }}
         />
       </div>

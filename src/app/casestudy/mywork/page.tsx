@@ -75,6 +75,40 @@ export default function Page() {
             ]}
           />
         </div>
+        <div className={styles.section}>
+          <div className={styles.description}>
+            <h2 className={styles.sectiontitle}>
+              eBird Dashboard and Marketing Page
+            </h2>
+            <p className={styles.summary}>
+              As a self-proclaimed bird nerd, I quite enjoy a weekend trail walk
+              to see all the local birds. My go-to app for tracking the birds I
+              see is eBird. As a design experiment a designed a dashboard for
+              the app and also created a sample marketing page using the assets
+              from the dashboard.
+            </p>
+            {/* to-do: add link to ebird */}
+          </div>
+          <MockupSwitcher
+            mockups={[
+              {
+                label: "Dashboard",
+                image: "/images/work/ebirddashboard/dashboard.png",
+                alt: "Sample dashboard for eBird showing recent sightings and stats",
+              },
+              {
+                label: "Hero",
+                image: "/images/work/ebirddashboard/hero.webp",
+                alt: "Sample marketing page hero section for eBird",
+              },
+              {
+                label: "Dashboard Marketing",
+                image: "/images/work/ebirddashboard/dashboardmarketing.webp",
+                alt: "Sample marketing page section showing the dashboard",
+              },
+            ]}
+          />
+        </div>
       </div>
       <Footer />
     </main>
