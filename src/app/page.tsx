@@ -94,6 +94,15 @@ export default function Home() {
                 line to build off of what I have done.
               </p>
             </div>
+            <div className={styles.skillssection}>
+              <p className={styles.skillssectiontitle}>Prototyping</p>
+              <p className={styles.skillssectiontext}>
+                We are currently in the golden age of being able to use actual
+                code to test and communicate designs. Before my design phase is
+                finished I make a point of building something that a true taste
+                of what it will be like to use the software.
+              </p>
+            </div>
           </div>
         </div>
       </div>

@@ -176,7 +176,7 @@
   line-height: 140%;
   letter-spacing: -0.025rem;
   align-self: stretch;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .aboutmetext {
@@ -214,7 +214,7 @@
   align-items: flex-start;
   align-content: flex-start;
   column-gap: 2rem;
-  row-gap: 1rem;
+  row-gap: 2rem;
 }
 
 .skillssection {
