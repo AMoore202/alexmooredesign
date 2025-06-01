@@ -3,7 +3,11 @@ import { Outfit } from "next/font/google";
 import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-const outfit = Outfit({ subsets: ["latin"] });
+const outfit = Outfit({
+  weight: ["300", "400", "500", "600"], // or whatever weights you're using
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Alex Moore Design",
