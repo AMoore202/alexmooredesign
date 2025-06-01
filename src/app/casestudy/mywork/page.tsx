@@ -1,9 +1,11 @@
+"use client";
+
 import styles from "./mywork.module.css";
-import Image from "next/image";
 import Footer from "../../ui/Footer";
 import Link from "next/link";
 import DesktopNavbar from "../../ui/DesktopNavbar";
 import MobileNavbar from "../../ui/MobileNavbar";
+import MockupSwitcher from "@/app/ui/MockupSwitcher";
 
 export default function Page() {
   return (
@@ -25,21 +27,20 @@ export default function Page() {
               image, but reducing the amount of time needed to load.
             </p>
           </div>
-          <div className={styles.mockupcontainer}>
-            <div className={styles.selector}>
-              <p className={styles.option}>New Design</p>
-              <p className={styles.option}>Old Design</p>
-            </div>
-            <div className={styles.mockup}>
-              <Image
-                src="/images/work/smartsuiteloginnew.webp"
-                fill
-                alt="New SmartSuite Login Screen Design"
-                priority
-                style={{ objectFit: "cover" }}
-              />
-            </div>
-          </div>
+          <MockupSwitcher
+            mockups={[
+              {
+                label: "New Design",
+                image: "/images/work/smartsuiteloginnew.webp",
+                alt: "New SmartSuite Login Screen Design",
+              },
+              {
+                label: "Old Design",
+                image: "/images/work/smartsuiteloginold.webp",
+                alt: "Old SmartSuite Login Screen Design",
+              },
+            ]}
+          />
         </div>
       </div>
       <Footer />
