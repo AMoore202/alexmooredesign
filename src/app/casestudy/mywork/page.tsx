@@ -24,7 +24,7 @@ export default function Page() {
               professional. Additionally, the old design loaded a heavy image
               that caused delays when on a slower network. In the new design I
               used an svg for the background graphic and layer blur on the side
-              image, but reducing the amount of time needed to load.
+              image, both reducing the time needed to load the page.
             </p>
           </div>
           <MockupSwitcher
