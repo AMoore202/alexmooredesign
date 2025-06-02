@@ -21,7 +21,7 @@ export default function Page() {
               Over the years, the login modal for the SmartSuite application had
               gotten a little stale and wasn’t capturing the feel of our brand.
               In my redesign, I wanted to create something that felt modern and
-              professional. Additionally the old design loaded a heavy image
+              professional. Additionally, the old design loaded a heavy image
               that caused delays when on a slower network. In the new design I
               used an svg for the background graphic and layer blur on the side
               image, but reducing the amount of time needed to load.
