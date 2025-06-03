@@ -93,7 +93,7 @@ export default function Page() {
             mockups={[
               {
                 label: "Dashboard",
-                image: "/images/work/ebirddashboard/dashboard.png",
+                image: "/images/work/ebirddashboard/dashboard.webp",
                 alt: "Sample dashboard for eBird showing recent sightings and stats",
               },
               {
@@ -105,6 +105,66 @@ export default function Page() {
                 label: "Dashboard Marketing",
                 image: "/images/work/ebirddashboard/dashboardmarketing.webp",
                 alt: "Sample marketing page section showing the dashboard",
+              },
+            ]}
+          />
+        </div>
+        <div className={styles.section}>
+          <div className={styles.description}>
+            <h2 className={styles.sectiontitle}>
+              Sustainability Professional Personal Website
+            </h2>
+            <p className={styles.summary}>
+              During my girlfriend’s post-masters job search I designed a
+              personal website for her. As a sustainability specialist, I wanted
+              to create a natural feeling website that subtly captured the
+              attention to detail and professionalism she had developed from her
+              work as a project manager.
+            </p>
+          </div>
+          <MockupSwitcher
+            mockups={[
+              {
+                label: "Hero",
+                image: "/images/work/sustainability/hero.webp",
+                alt: "Hero section of the personal website",
+              },
+              {
+                label: "About Me",
+                image: "/images/work/sustainability/aboutme.webp",
+                alt: "About me section of the personal website",
+              },
+              {
+                label: "Past Projects",
+                image: "/images/work/sustainability/pastprojects.webp",
+                alt: "Past projects section of the personal website",
+              },
+            ]}
+          />
+        </div>
+        <div className={styles.section}>
+          <div className={styles.description}>
+            <h2 className={styles.sectiontitle}>
+              Hockey Scores App Colour System
+            </h2>
+            <p className={styles.summary}>
+              My buddy Dan got tired off having to watch ads in order to check
+              the latest hockey scores so he built himself an app to keep him up
+              to date on the latest games. Needing some help on the styling, he
+              asked me to put together a colour scheme to use in his app.
+            </p>
+          </div>
+          <MockupSwitcher
+            mockups={[
+              {
+                label: "Sample Screen",
+                image: "/images/work/hockeyscores/samplescreen.webp",
+                alt: "Sample screen of the hockey scores app",
+              },
+              {
+                label: "Colour System",
+                image: "/images/work/hockeyscores/coloursystem.webp",
+                alt: "Overview of the colour system used in the hockey scores app",
               },
             ]}
           />
