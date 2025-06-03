@@ -47,3 +47,25 @@
   aspect-ratio: 1016 / 628.39;
   overflow: hidden;
 }
+
+@media (max-width: 1200px) {
+  .mockupcontainer {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 679px) {
+  .selector {
+    padding: 0.75rem;
+    width: 15rem;
+  }
+  
+  .option {
+    font-size: 0.875rem;
+  }
+
+  .mockup {
+    border-radius: 0.5rem;
+  }
+}
