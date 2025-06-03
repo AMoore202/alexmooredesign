@@ -169,6 +169,36 @@ export default function Page() {
             ]}
           />
         </div>
+        <div className={styles.section}>
+          <div className={styles.description}>
+            <h2 className={styles.sectiontitle}>Bird Colour Schemes</h2>
+            <p className={styles.summary}>
+              Wanting to work on my skills making colour schemes, I used birds
+              as a natural inspiration. For each bird, I created a hero section
+              that not only used the bird’s colours, but also tried to capture
+              the personality of the bird.
+            </p>
+          </div>
+          <MockupSwitcher
+            mockups={[
+              {
+                label: "Chestnut Sided Warbler",
+                image: "/images/work/birds/chestnutsidedwarbler.webp",
+                alt: "Sample hero section using the colours of a chestnut sided warbler",
+              },
+              {
+                label: "Cedar Waxwing",
+                image: "/images/work/birds/cedarwaxwing.webp",
+                alt: "Sample hero section using the colours of a cedar waxwing",
+              },
+              {
+                label: "Eurasian Magpie",
+                image: "/images/work/birds/eurasianmagpie.webp",
+                alt: "Sample hero section using the colours of a Eurasian magpie",
+              },
+            ]}
+          />
+        </div>
       </div>
       <Footer />
     </main>
