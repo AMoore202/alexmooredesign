@@ -9,8 +9,8 @@
   display: flex;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
   flex-direction: column;
   align-items: center;
   gap: 2.25rem;
@@ -59,3 +59,36 @@
   font-weight: 400;
   line-height: 140%;
 }
+
+@media (max-width: 1200px) {
+  .content {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media (max-width: 679px) {
+  .content {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    gap: 1.125rem;
+  }
+  .section {
+    gap: 1rem;
+  }
+
+  .pagetitle {
+    font-size: 3rem;
+  }
+
+  .sectiontitle {
+    font-size: 1.5rem;
+  }
+
+  .summary {
+    font-size: 1rem;
+  }
+}
+
