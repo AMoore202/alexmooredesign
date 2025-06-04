@@ -122,6 +122,28 @@
   transition: opacity 0.5s ease-out;
 }
 
+.linkbutton {
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  background: linear-gradient(0deg, var(--Neutral-900, #3D3D3D) 0%, var(--Neutral-800, #454545) 100%);
+  box-shadow: 0px 8px 8px -4px rgba(0, 0, 0, 0.15),
+    0px 4px 4px -2px rgba(0, 0, 0, 0.15),
+    0px 1px 2px 0px rgba(255, 255, 255, 0.15) inset,
+    0px 1px 1px -0.5px rgba(0, 0, 0, 0.15),
+    0px 2px 2px -1px rgba(0, 0, 0, 0.15);
+  color: var(--Neutral-0, #FFF);
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: -0.03rem;
+  transition: transform 0.2s ease-out;
+  cursor: pointer;
+}
+
+.linkbutton:hover {
+  transform: scale(1.03);
+  text-decoration: none;
+}
+
 @media (max-width: 1200px) {
   .casestudies {
     gap: 2rem;
@@ -142,6 +164,10 @@
 
   .casestudyimagebids {
     width: 340px;
+  }
+
+  .linkbutton {
+    font-size: 1.25rem;
   }
 }
 
