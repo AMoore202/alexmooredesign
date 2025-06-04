@@ -6,7 +6,6 @@ import { useState } from "react";
 import PasswordModal from "./PasswordModal";
 import { useRouter } from "next/navigation";
 import { isAuthenticated } from "../lib/auth";
-import Link from "next/link";
 
 export default function CaseStudyCards() {
   const [caseStudyImage1Loaded, setCaseStudyImage1Loaded] = useState(false);
