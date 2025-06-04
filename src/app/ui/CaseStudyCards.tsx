@@ -149,6 +149,9 @@ export default function CaseStudyCards() {
           </div>
         </div>
       </div>
+      <div onClick={() => handleClick("mywork")} className={styles.linkbutton}>
+        View more work...
+      </div>
     </div>
   );
 
